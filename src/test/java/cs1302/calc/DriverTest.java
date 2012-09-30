@@ -1,3 +1,5 @@
+package cs1302.calc
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
