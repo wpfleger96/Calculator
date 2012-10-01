@@ -70,14 +70,14 @@ If you have any questions, please email them to Michael E. Cotterell at
 
 ## Frequently Asked Questions
 
-1. What do I do if the <code>sbt</code> command does not execute?
+ 1. What do I do if the <code>sbt</code> command does not execute?
 
-You probably need to make the file executable. To do this, simmply make sure 
-you are in the same directory as <code>sbt</code> and issue the following
-command:
+    You probably need to make the file executable. To do this, simmply make sure 
+    you are in the same directory as <code>sbt</code> and issue the following
+    command:
 
-    $ chmod +x sbt
+        $ chmod +x sbt
 
-This command updates the permissions on the file, making it executable for the
-current user.
+    This command updates the permissions on the file, making it executable for the
+    current user.
 
