@@ -18,14 +18,16 @@ subtraction, multiplication, division, factorial, and exponentiation.
 
 ## Resources
 
-Skeleton code for this project can be retrieved via 
-<code>git://github.com/mepcotterell/cs1302-calculator.git</code>. For example, 
-you can issue the following command to clone the repository.
+The files for this project are hosted Github using <code>git</code>. They can be
+retrieved by cloning the repository found at <code>git://github.com/mepcotterell/cs1302-calculator.git</code>. 
+For example, you can issue the following command to clone the repository:
 
     $ git clone git://github.com/mepcotterell/cs1302-calculator.git LastName-FirstName-p2
 
 As always, I suggest developing directly on <code>nike.cs.uga.edu</code> because
-this is where your project will be run and tested.
+this is where your project will be run and tested. Since <code>git</code> is 
+already installed on <code>nike</code>, you can clone the project directly int your 
+<code>nike</code> home directory.
 
 ## Build System
 
