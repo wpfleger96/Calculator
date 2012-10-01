@@ -12,19 +12,37 @@ import static org.junit.Assert.assertTrue;
  */
 public class ReversePolishNotationTest {
 
+    /**
+     * Returns a String representation of a postfix expression returned by the
+     * infixToPostfix method in the ReversePolishNotation class.
+     *
+     * @param infix a mathematical expression in infix notation
+     */
+    public String getPostfix(String infix) {
+	String postfix[] = ReversePolishNotation.infixToPostfix(infix.split(" "));
+	return Arrays.asList(postfix).toString().replaceAll("[,\\[\\]]", "");
+    } // getPostfix
+
     @Test
     public void testInfixToPostfix() {
 
-	String infix = "1 + 2 + 3";
+	String examples[][] = {
+	    {"1 + 2", "1 2 +"},
+	    {"1 - 2", "1 2 -"},
+	    {"1 * 2", "1 2 *"},
+	    {"1 / 2", "1 2 /"},
+	    {"1 ^ 2", "1 2 ^"},
+	    {"4 !", "4 !"},
+	    {"4 + 2 ! / 3 - 7 * 2 ^ 3", "4 2 ! 3 / + 7 2 3 ^ * -"}
+	};
+
+	String infix = "";
 	String expected = "[1, 2, +, 3, +]";
-      
-	String postfix[] = ReversePolishNotation.infixToPostfix(infix.split(" "));
 
-	String result = Arrays.asList(postfix).toString();
-
-	System.out.println(result);
-
-	assertTrue(result.equals(expected));
+	for (String[] example: examples) {
+	    String message = String.format("\"%s\" --> \"%s\" (expected \"%s\")", example[0], getPostfix(example[0]), example[1]);
+	    assertTrue(message, example[1].equals(getPostfix(example[0])));
+	} // for
 
     } // testInfixToPosrfix
 
