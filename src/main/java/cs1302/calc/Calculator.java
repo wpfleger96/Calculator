@@ -1,0 +1,30 @@
+package cs1302.calc;
+
+import javax.swing.ContentPane;
+import javax.swing.JFrame;
+
+/** 
+ * This class represente the GUI for the calculator app
+ */
+public class Calculator {
+
+    public static void createAndShowGUI() {
+
+	// create and setup the window
+	JFrame frame = new JFrame("Calculator");
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	// TODO: create the components fore the calculator
+
+	// TODO: setup the content pane (i.e., where the main GUI lives) and
+	//       components to it
+
+	// TODO: setup and add the menu bar
+
+	// show the window.
+        frame.pack();
+        frame.setVisible(true);
+
+    } // createAndShowGUI
+
+} // Calculator
