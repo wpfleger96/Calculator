@@ -1,7 +1,6 @@
-cs1302-calculator
-=================
+# CSCI 1302 - Calculator Project (cs1302-calculator)
 
-Skeleton code for Caculator Project
+Skeleton code for the Caculator project
 
 ## Project Description
 
@@ -69,4 +68,16 @@ the following command, replacing the email address with your email address:
 If you have any questions, please email them to Michael E. Cotterell at 
 <code>mepcotterell+1302@gmail.com</code>
 
+## Frequently Asked Questions
+
+1. What do I do if the <code>sbt</code> command does not execute?
+
+You probably need to make the file executable. To do this, simmply make sure 
+you are in the same directory as <code>sbt</code> and issue the following
+command:
+
+    $ chmod +x sbt
+
+This command updates the permissions on the file, making it executable for the
+current user.
 
