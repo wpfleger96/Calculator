@@ -24,6 +24,9 @@ you can issue the following command to clone the repository.
 
     $ git clone git://github.com/mepcotterell/cs1302-calculator.git LastName-FirstName-p2
 
+As always, I suggest developing directly on <code>nike.cs.uga.edu</code> because
+this is where your project will be run and tested.
+
 ## Build System
 
 For this project, we will be using the Simple Build System (sbt). If you clone 
