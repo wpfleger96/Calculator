@@ -1,6 +1,5 @@
 package cs1302.calc;
 
-import javax.swing.ContentPane;
 import javax.swing.JFrame;
 
 /** 
@@ -18,6 +17,8 @@ public class Calculator {
 
 	// TODO: setup the content pane (i.e., where the main GUI lives) by
 	//       adding components to it
+
+	frame.add(new javax.swing.JButton("Hello World"));
 
 	// TODO: setup and add the menu bar
 

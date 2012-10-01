@@ -1,4 +1,4 @@
-package cs1302.calc
+package cs1302.calc;
 
 import org.junit.Test;
 

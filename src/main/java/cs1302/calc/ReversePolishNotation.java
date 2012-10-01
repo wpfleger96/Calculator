@@ -21,7 +21,7 @@ public class ReversePolishNotation {
 	precedenceMap = Collections.unmodifiableMap(pMap);
     } // static
 
-    public String[] infix2postfix(String[] infix) {
+    public static String[] infixToPostfix(String[] infix) {
 
 	List<String> postfix = new ArrayList<String>();
 
