@@ -3,7 +3,7 @@ package cs1302.calc;
 import java.util.Arrays;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * This is a test for the ReversePolishNotation class. 
@@ -12,18 +12,21 @@ import static org.junit.Assert.assertEquals;
  */
 public class ReversePolishNotationTest {
 
-  @Test
-  public void testInfixToPostfix() {
+    @Test
+    public void testInfixToPostfix() {
 
-      String infix = "1 + 2 + 3";
+	String infix = "1 + 2 + 3";
+	String expected = "[1, 2, +, 3, +]";
       
-      String postfix[] = ReversePolishNotation.infixToPostfix(infix.split(" "));
+	String postfix[] = ReversePolishNotation.infixToPostfix(infix.split(" "));
 
-      System.out.println(Arrays.asList(postfix).toString());
+	String result = Arrays.asList(postfix).toString();
 
-      assertEquals("Driver Test", true, true);
+	System.out.println(result);
 
-  } // testInfixToPosrfix
+	assertTrue(result.equals(expected));
+
+    } // testInfixToPosrfix
 
 } // ReversePolishNotationTest
 
