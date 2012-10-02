@@ -130,6 +130,9 @@ Math basicMath = new BasicMath();
 double result = ReversePolishNotation.evaluate(basicMath, postfix);
 ```
 
+Note: If an element of the infix array contains a number prefixed with a minus 
+sign then that number is treated as a negative number.
+
 For more general information on RPN, you can read its' WikiPedia page here:
 http://en.wikipedia.org/wiki/Reverse_Polish_notation
 
