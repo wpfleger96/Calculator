@@ -11,30 +11,44 @@ calculator app is interesting in that we will provide two different
 implementations for handling mathematical operations: a basic, iterative
 implementation and a recursive implementation. This will be accomplished by 
 implementing the <code>Math</code> interface in two classes, 
-<code>BasicMath</code> and <code>RecursiveMath</code>.
-
-That's right, you'll be implementing recursive methods for addition, 
-subtraction, multiplication, division, factorial, and exponentiation.
+<code>BasicMath</code> and <code>RecursiveMath</code>. That's right, you'll be 
+implementing recursive methods for addition, subtraction, multiplication, 
+division, factorial, and exponentiation.
 
 ## Project Tasks
+
+Before you submit your project, you need to perform the following tasks:
 
  1. Implement a basic implementation of the <code>Math</code> interface in the
     <code>BasicMath</code> class. The implementations for **all** the methods in
     this class are to be non-recursive.
+
  2. Implement a recursive implementation of the <code>Math</code> interface in
     the <code>RecursiveMath</code> class. the implementations for **all** the
     methods in this class are to be recursive. We will discuss how to do the
     addition operation recursively in class.
+
  3. Design and implement a GUI interface for your calculator app in the
     <code>Calculator</code> class using Java Swing. You may need to add methods 
     to this file as needed in order make your GUI functional. Currently, the
     skeleton code for this class contains an example of how to create a button
     in Swing and how to listen and react to it being clicked.
+
  4. Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
     classes in the <code>src/test/java/calc/1302</code> directory. This 
     directory already includes some unit tests for <code>Driver</code> and 
     <code>ReversePolishNotation</code> classes that your instructor has
     implemented.
+
+ 5. Ensure that your code is properly documented using inline comments as 
+    neccessary. In general, you should describe in regular terms what it is the
+    code that you are writing is doing. A small example of such comments can be
+    seen in the <code>createAndShowGUI</code> method in the  <code>Calculator</code>
+    class. Please note that you do not need to write JavaDoc comments for the 
+    methods that implement methods in the <code>Math</code> interface as they 
+    will inherit the comments from the interface. However, if you create any new
+    methods or classes then they will need to be properly documented using
+    JavaDoc comments and tags.
 
 ## Resources
 
