@@ -135,6 +135,7 @@ http://en.wikipedia.org/wiki/Reverse_Polish_notation
 
 ## Design Suggestions
 
+You may design your calculator app to look as plain or as cool as you want.
 A suggested mock-up of the graphical user interface is provided below.
 
 ![Calculator UI Mock-up](http://i.imgur.com/BKgzn.png "Calculator UI Mock-up")
