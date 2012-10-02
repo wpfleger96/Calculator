@@ -79,9 +79,9 @@ Before you submit your project, you need to perform the following tasks:
     methods or classes then they will need to be properly documented using
     JavaDoc comments and tags.
 
- 6. Update the top of the <code>README.md</code> in your project directory to
-    contain the following information at the top of the file (updating it with
-    your own information:
+ 6. Update the <code>README.md</code> in your project directory to contain the 
+    following information at the top of the file (updating it with your own 
+    information:
 
     ```markdown
     # Project Submission
@@ -89,7 +89,6 @@ Before you submit your project, you need to perform the following tasks:
     Author: YOUR NAME (LAST 3 DIGITS OF 810 NUMBER HERE)
     ```
         
-
 ## Extra Credit Project Tasks
 
 You may earn up to 10 points extra credit for each of the tasks listed below:
