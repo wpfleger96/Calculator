@@ -26,7 +26,7 @@ contained in the Resources section below in order to do your development on
 
 ## Project Description
 
-http://i.imgur.com/BKgzn.png
+![Calculator UI Mock-up](http://i.imgur.com/BKgzn.png "Calculator UI Mock-up")
 
 Your goal is to develop a calculator app in Java with a graphical user interface
 (GUI) powered by Swing. You will be responsible for designing and implementing
