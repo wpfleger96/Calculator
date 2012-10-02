@@ -79,10 +79,6 @@ order to compile your project, you can use the following command:
 
     $ ./sbt compile
 
-In order to generate the documentation for your project, use the following command:
-
-    $ ./sbt doc
-
 To run your JUnit tests, you may use the following command:
 
     $ ./sbt test
