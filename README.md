@@ -91,10 +91,15 @@ Before you submit your project, you need to perform the following tasks:
         
 ## Extra Credit Project Tasks
 
-You may earn up to 10 points extra credit for each of the tasks listed below:
+You may earn up to 5 points extra credit for each of the tasks listed below:
 
  1. Design your user interface so that the Calculator application can be used
     entirely using the keyboard.
+
+ 2. Make a dialog box appear with a special message when a user enters the 
+    following sequence of buttons on the keyboard (without the commas): up, up, 
+    down, down, left, right, B, A. The last two characters should be considered 
+    case-insensitive. 
 
 ## Note on Reverse Polish Notation (RPN)
 
