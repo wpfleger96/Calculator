@@ -170,6 +170,8 @@ Also, since <code>git</code> is a decentralized version control system, you will
 have your own local copy of the repository. This means that you can log your 
 changes using commits and even revert to a previous revision if necessary.
 
+JavaDoc for the skeleton code should be available [here](http://cs.uga.edu/~mec/cs1302/projects/p2/cs1302-calculator/target/scala-2.9.2/api/).
+
 ## Directory Structure and Packages
 
 All of the non-test classes for this project should be contained in the <code>src/main/java/cs1302/calc</code>
