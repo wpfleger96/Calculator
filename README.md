@@ -223,9 +223,9 @@ If you have any questions, please email them to Michael E. Cotterell at
     After following the steps on that website, try logging into nike using the 
     SSH command above.
 
-    If you are connecting to <code>nike</code> using PuTTY then you need to
-    download and install Xming. For information about how to setup Xming with
-    Putty, please follow the directions [here](http://blog.nth-design.com/2010/05/19/x11-putty-xming/).
+    If you are connecting to <code>nike</code> using PuTTY on Windows then you 
+    need to download and install Xming. For information about how to setup Xming
+    with Putty, please follow the directions [here](http://blog.nth-design.com/2010/05/19/x11-putty-xming/).
     You may skip some of the steps on that website (e.g., the section on 
     downloading and installing PuTTY), however, please read all of the sections
     related to Xming as wells the sections related to configuring PuTTY.\
