@@ -26,8 +26,6 @@ contained in the Resources section below in order to do your development on
 
 ## Project Description
 
-![Calculator UI Mock-up](http://i.imgur.com/BKgzn.png "Calculator UI Mock-up")
-
 Your goal is to develop a calculator app in Java with a graphical user interface
 (GUI) powered by Swing. You will be responsible for designing and implementing
 the user interface for your project (following a few guidelines). This 
@@ -50,7 +48,9 @@ Before you submit your project, you need to perform the following tasks:
  2. Implement a recursive implementation of the <code>Math</code> interface in
     the <code>RecursiveMath</code> class. the implementations for **all** the
     methods in this class are to be recursive. We will discuss how to do the
-    addition operation recursively in class.
+    addition operation recursively in class. Since our implementation needs to
+    handle doubles, you may have one of your base cases handle the operation
+    explicitly when the number that is being recursed is less than 1.
 
  3. Design and implement a GUI interface for your calculator app in the
     <code>Calculator</code> class using Java Swing. You may need to add methods 
@@ -121,6 +121,23 @@ double result = ReversePolishNotation.evaluate(basicMath, postfix);
 
 For more general information on RPN, you can read its' WikiPedia page here:
 http://en.wikipedia.org/wiki/Reverse_Polish_notation
+
+## Design Suggestions
+
+I have included a mock-up of what I think the user interface should look like 
+below.
+
+![Calculator UI Mock-up](http://i.imgur.com/BKgzn.png "Calculator UI Mock-up")
+
+Your GUI should incorporate atleast the same functionality as the one in the
+aboce mock-up. The meaning for most of the buttons is obvious. The <code><</code> 
+button means backspace. The <code>X</code> button means clear the text area.
+The <code>Use RPN</code> button should toggle between "Use RPN" and use 
+"Use Basic", depending on which implementation of the <code>Math</code> interface
+your code is using. In the mock-up above, the app is currently using the 
+<code>BasicMath</code> class as its' <code>Math</code> implementation. The 
+<code>^</code> button is for exponentiation and the <code>!</code> button is for 
+factorial.
 
 ## Resources
 
