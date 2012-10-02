@@ -41,18 +41,18 @@ division, factorial, and exponentiation.
 
 Before you submit your project, you need to perform the following tasks:
 
- 1. Implement a basic implementation of the <code>Math</code> interface in the
+ 1. (10 points) Implement a basic implementation of the <code>Math</code> interface in the
     <code>BasicMath</code> class. The implementations for **all** the methods in
     this class are to be non-recursive.
 
- 2. Implement a recursive implementation of the <code>Math</code> interface in
+ 2. (20 points) Implement a recursive implementation of the <code>Math</code> interface in
     the <code>RecursiveMath</code> class. the implementations for **all** the
     methods in this class are to be recursive. We will discuss how to do the
     addition operation recursively in class. Since our implementation needs to
     handle doubles, you may have one of your base cases handle the operation
     explicitly when one of the numbers is less than 1.
 
- 3. Design and implement a GUI interface for your calculator app in the
+ 3. (40 points) Design and implement a GUI interface for your calculator app in the
     <code>Calculator</code> class using Java Swing. You may need to add methods 
     to this file as needed in order make your GUI functional. Currently, the
     skeleton code for this class contains an example of how to create a button
@@ -62,14 +62,14 @@ Before you submit your project, you need to perform the following tasks:
     <code>Math</code> implementations. Please see the section titled 
     "Design Suggestions" below for more information.
 
- 4. Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
+ 4. (20 points) Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
     classes in the <code>src/test/java/calc/1302</code> directory. This 
     directory already includes some unit tests for <code>Driver</code> and 
     <code>ReversePolishNotation</code> classes that your instructor has
     implemented. Do not cheat yourself by creating poor tests and or faking
     your tests. They will be beneficial in helping you debug your code.
 
- 5. Ensure that your code is properly documented using inline comments as 
+ 5. (10 points) Ensure that your code is properly documented using inline comments as 
     necessary. In general, you should describe in regular terms what it is the
     code that you are writing is doing. A small example of such comments can be
     seen in the <code>createAndShowGUI</code> method in the  <code>Calculator</code>
