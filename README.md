@@ -1,7 +1,8 @@
 # CSCI 1302 - Calculator Project (cs1302-calculator)
 
-Skeleton code for the Calculator project. Please read the entirety of this file
-before beginning your project.
+Skeleton code for the Calculator project assigned to the students in Michael E. 
+Cotterell's Fall 2012 CSCI 1302 class at the University of Georgia. Please read 
+the entirety of this file before beginning your project.
 
 ## Academic Honesty
 
