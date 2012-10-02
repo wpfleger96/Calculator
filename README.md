@@ -8,16 +8,6 @@ before beginning your project.
 You implicitly agree to Academic Honesty policy as outlined in the course 
 syllabus and course website (available at: http://cs.uga.edu/~mec/cs1302/).
 
-In addition to the terms expressed in that policy, you are not to make any 
-portion of your implementation of this project publicly available. This 
-includes, but is not limited to, posting snippets of your code on help
-websites. You may ask general questions about programming on these websites
-that relate to this project, but you must phrase such questions in a way
-that makes them independent of this project. If you copy material from the Web 
-(in any fashion) and incorporate it into your code then please cite where you 
-got the code from in order to avoid plagiarism. Violating these terms will be
-considered an act of academic dishonesty.
-
 In accordance with the notice above, I must caution you to **not** fork this
 repository on GitHub if you have an account. Doing so will more than likely make
 your copy of the project publicly visible. Please follow the instructions 
