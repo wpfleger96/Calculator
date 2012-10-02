@@ -2,6 +2,27 @@
 
 Skeleton code for the Caculator project
 
+## Academic Honesty
+
+You implicitly agree to Academic Honesty policy as outlined in the course 
+syllabus and course website (available at: http://cs.uga.edu/~mec/cs1302/).
+
+In addition to the terms expressed in that policy, you are not to make any 
+portion of your implementation of this project publicly available. This 
+includes, but is not limitted to, posting snippets of your code on help
+websites. You may ask general questions about programming on these websites
+that relate to this project, but you must phrase such questions in a way
+that makes them independent of this project. If you copy material from the Web 
+(in any fashion) and incorporate it into your code then please cite where you 
+got the code from in order to avoid plagiarism. Violating these terms will be
+considered an act of academic dishonesty.
+
+In accordance with the notice above, I must caution you to **not** fork this
+repository on GitHub if you have an account. Doing so will more than likely make
+your copy of the project publicly visible. Please follow the instructions 
+contained in the Resources section below in order to do your development on
+<code>nike</code>
+
 ## Project Description
 
 Your goal is to develop a calculator app in Java with a graphical user interface
@@ -32,7 +53,8 @@ Before you submit your project, you need to perform the following tasks:
     <code>Calculator</code> class using Java Swing. You may need to add methods 
     to this file as needed in order make your GUI functional. Currently, the
     skeleton code for this class contains an example of how to create a button
-    in Swing and how to listen and react to it being clicked.
+    in Swing and how to listen and react to it being clicked. Your GUI needs
+    to have a 
 
  4. Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
     classes in the <code>src/test/java/calc/1302</code> directory. This 
@@ -49,6 +71,48 @@ Before you submit your project, you need to perform the following tasks:
     will inherit the comments from the interface. However, if you create any new
     methods or classes then they will need to be properly documented using
     JavaDoc comments and tags.
+
+## Extra Credit Project Tasks
+
+You may earn up to 10 points extra credit for each 
+
+
+## Reverse Polish Notation (RPN)
+
+Included with this project is an implementation of a <code>ReversePolishNotation</code>
+class written by your instructor that provides a static method for converting a
+mathematical expression represented in infix notation into one that is expressed 
+in postfix notation (also known as Reverse Polish Notation). There is also a 
+static method provided to evaluate a mathematical expression represented in 
+postfix notation given an implementation of the <code>Math</code> interface is 
+also provided. 
+
+You do need to understand the exact details of what RPN is in order to complete
+this project, however, you do need to understand what the input to the <code>infixToPostfix</code>
+method needs to look like. The method takes one parameter, an array of Strings.
+Each element of this array should contain the String representation of either
+a number or an operator. For example, you could write something like following:
+
+```java
+// string containing a mathematical expression represented in infix notation
+String expression = "4 + 2 ! / 3 - 7 * 2 ^ 3";
+
+// convert the expression into an array by splitting it by wite space
+String infix[] = expression.split(" ");
+
+// use the ReversePolishNotation class to get an array containing the expression
+// in postfix notation
+String postfix[] = ReversePolishNotation.infixToPostfix(infix);
+
+// create an instance of your BasicMath class
+Math basicMath = new BasicMath();
+
+// use the ReversePolishNotation class to evaluate the expression
+double result = ReversePolishNotation.evaluate(basicMath, postfix);
+```
+
+For more general information on RPN, you can read its' WikiPedia page here:
+http://en.wikipedia.org/wiki/Reverse_Polish_notation
 
 ## Resources
 
