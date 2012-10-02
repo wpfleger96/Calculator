@@ -1,6 +1,6 @@
 # CSCI 1302 - Calculator Project (cs1302-calculator)
 
-Skeleton code for the Caculator project. Please read the entirety of this file
+Skeleton code for the Calculator project. Please read the entirety of this file
 before beginning your project.
 
 ## Academic Honesty
@@ -202,4 +202,31 @@ If you have any questions, please email them to Michael E. Cotterell at
 
     This command updates the permissions on the file, making it executable for the
     current user.
+
+ 2. When I execute the <code>sbt run</code> command on <code>nike</code>, I get 
+    a <code>java.awt.HeadlessException</code> that tells me no X11 DISPLAY 
+    variable was set, but this program performed an operation which requires it.
+    What is going on and how do I fix it?
+
+    This exception is thrown if you are not running an X server on your computer
+    or you are not telling your SSH client how to connect to the X server on
+    your computer.
+
+    If you are connecting to <code>nike</code> using a Linux or MacOS X machine
+    then you probably already have an X server installed. If that is the case
+    then you need to login using the following command:
+
+        $ ssh -X username@nike.cs.uga.edu
+
+    If you are using MacOS X and are unable to resolve your problem simply by
+    issuing the above command then follow the directions [here](http://tutorialgenius.blogspot.com/2012/03/how-to-enable-x11-forwarding-with-ssh.html).
+    After following the steps on that website, try logging into nike using the 
+    SSH command above.
+
+    If you are connecting to <code>nike</code> using PuTTY then you need to
+    download and install Xming. For information about how to setup Xming with
+    Putty, please follow the directions [here](http://blog.nth-design.com/2010/05/19/x11-putty-xming/).
+    You may skip some of the steps on that website (e.g., the section on 
+    downloading and installing PuTTY), however, please read all of the sections
+    related to Xming as wells the sections related to configuring PuTTY.\
 
