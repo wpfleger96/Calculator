@@ -16,6 +16,26 @@ implementing the <code>Math</code> interface in two classes,
 That's right, you'll be implementing recursive methods for addition, 
 subtraction, multiplication, division, factorial, and exponentiation.
 
+## Project Tasks
+
+ 1. Implement a basic implementation of the <code>Math</code> interface in the
+    <code>BasicMath</code> class. The implementations for **all** the methods in
+    this class are to be non-recursive.
+ 2. Implement a recursive implementation of the <code>Math</code> interface in
+    the <code>RecursiveMath</code> class. the implementations for **all** the
+    methods in this class are to be recursive. We will discuss how to do the
+    addition operation recursively in class.
+ 3. Design and implement a GUI interface for your calculator app in the
+    <code>Calculator</code> class using Java Swing. You may need to add methods 
+    to this file as needed in order make your GUI functional. Currently, the
+    skeleton code for this class contains an example of how to create a button
+    in Swing and how to listen and react to it being clicked.
+ 4. Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
+    classes in the <code>src/test/java/calc/1302</code> directory. This 
+    directory already includes some unit tests for <code>Driver</code> and 
+    <code>ReversePolishNotation</code> classes that your instructor has
+    implemented.
+
 ## Resources
 
 The files for this project are hosted Github using <code>git</code>. They can be
@@ -28,6 +48,14 @@ As always, I suggest developing directly on <code>nike.cs.uga.edu</code> because
 this is where your project will be run and tested. Since <code>git</code> is 
 already installed on <code>nike</code>, you can clone the project directly int your 
 <code>nike</code> home directory.
+
+If any changes are made to the project description or skeleton code, they will
+be announced in class. In order to incorporate such changes into your code, you 
+need only do a <code>git pull</code>.
+
+Also, since <code>git</code> is a decentralized version control system, you will
+have your own local copy of the repository. This means that you can log your 
+changes using commits and even revert to a previous revision if necessary.
 
 ## Build System
 
