@@ -26,6 +26,8 @@ contained in the Resources section below in order to do your development on
 
 ## Project Description
 
+http://i.imgur.com/BKgzn.png
+
 Your goal is to develop a calculator app in Java with a graphical user interface
 (GUI) powered by Swing. You will be responsible for designing and implementing
 the user interface for your project (following a few guidelines). This 
