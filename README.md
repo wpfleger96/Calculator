@@ -1,6 +1,7 @@
 # CSCI 1302 - Calculator Project (cs1302-calculator)
 
-Skeleton code for the Caculator project
+Skeleton code for the Caculator project. Please read the entirety of this file
+before beginning your project.
 
 ## Academic Honesty
 
@@ -21,7 +22,7 @@ In accordance with the notice above, I must caution you to **not** fork this
 repository on GitHub if you have an account. Doing so will more than likely make
 your copy of the project publicly visible. Please follow the instructions 
 contained in the Resources section below in order to do your development on
-<code>nike</code>
+<code>nike</code>.
 
 ## Project Description
 
@@ -54,13 +55,16 @@ Before you submit your project, you need to perform the following tasks:
     to this file as needed in order make your GUI functional. Currently, the
     skeleton code for this class contains an example of how to create a button
     in Swing and how to listen and react to it being clicked. Your GUI needs
-    to have a 
+    to be able to evaluate mathematical expressions of an arbitrary length. It 
+    also needs to include a button for switching between using the two different
+    <code>Math</code> implementations.
 
  4. Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
     classes in the <code>src/test/java/calc/1302</code> directory. This 
     directory already includes some unit tests for <code>Driver</code> and 
     <code>ReversePolishNotation</code> classes that your instructor has
-    implemented.
+    implemented. Do not cheat yourself by creating poor tests and or faking
+    your tests. They will be beneficial in helping you debug your code.
 
  5. Ensure that your code is properly documented using inline comments as 
     neccessary. In general, you should describe in regular terms what it is the
@@ -74,10 +78,12 @@ Before you submit your project, you need to perform the following tasks:
 
 ## Extra Credit Project Tasks
 
-You may earn up to 10 points extra credit for each 
+You may earn up to 10 points extra credit for each of the tasks listed below:
 
+ 1. Design your user interface so that the Calculator application can be used
+    entirely using the keyboard.
 
-## Reverse Polish Notation (RPN)
+## Note on Reverse Polish Notation (RPN)
 
 Included with this project is an implementation of a <code>ReversePolishNotation</code>
 class written by your instructor that provides a static method for converting a
@@ -134,6 +140,15 @@ need only do a <code>git pull</code>.
 Also, since <code>git</code> is a decentralized version control system, you will
 have your own local copy of the repository. This means that you can log your 
 changes using commits and even revert to a previous revision if necessary.
+
+## Directory Structure and Packages
+
+All of the non-test classes for this project should be contained in the <code>src/main/java/cs1302/calc</code>
+directory. These classes are in the <code>cs1302.calc</code> package.
+
+All of the JUnit test classes for this project should be contained in the <code>src/test/java/cs1302/calc</code>
+directory. These classes are also contained in the <code>cs1302.calc</code> 
+package so that you do not need to do any imports to test your own code.
 
 ## Build System
 
