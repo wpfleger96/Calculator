@@ -10,7 +10,7 @@ syllabus and course website (available at: http://cs.uga.edu/~mec/cs1302/).
 
 In addition to the terms expressed in that policy, you are not to make any 
 portion of your implementation of this project publicly available. This 
-includes, but is not limitted to, posting snippets of your code on help
+includes, but is not limited to, posting snippets of your code on help
 websites. You may ask general questions about programming on these websites
 that relate to this project, but you must phrase such questions in a way
 that makes them independent of this project. If you copy material from the Web 
@@ -50,7 +50,7 @@ Before you submit your project, you need to perform the following tasks:
     methods in this class are to be recursive. We will discuss how to do the
     addition operation recursively in class. Since our implementation needs to
     handle doubles, you may have one of your base cases handle the operation
-    explicitly when the number that is being recursed is less than 1.
+    explicitly when one of the numbers is less than 1.
 
  3. Design and implement a GUI interface for your calculator app in the
     <code>Calculator</code> class using Java Swing. You may need to add methods 
@@ -59,7 +59,8 @@ Before you submit your project, you need to perform the following tasks:
     in Swing and how to listen and react to it being clicked. Your GUI needs
     to be able to evaluate mathematical expressions of an arbitrary length. It 
     also needs to include a button for switching between using the two different
-    <code>Math</code> implementations.
+    <code>Math</code> implementations. Please see the section titled 
+    "Design Suggestions" below for more information.
 
  4. Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
     classes in the <code>src/test/java/calc/1302</code> directory. This 
@@ -69,7 +70,7 @@ Before you submit your project, you need to perform the following tasks:
     your tests. They will be beneficial in helping you debug your code.
 
  5. Ensure that your code is properly documented using inline comments as 
-    neccessary. In general, you should describe in regular terms what it is the
+    necessary. In general, you should describe in regular terms what it is the
     code that you are writing is doing. A small example of such comments can be
     seen in the <code>createAndShowGUI</code> method in the  <code>Calculator</code>
     class. Please note that you do not need to write JavaDoc comments for the 
@@ -90,9 +91,9 @@ You may earn up to 10 points extra credit for each of the tasks listed below:
 Included with this project is an implementation of a <code>ReversePolishNotation</code>
 class written by your instructor that provides a static method for converting a
 mathematical expression represented in infix notation into one that is expressed 
-in postfix notation (also known as Reverse Polish Notation). There is also a 
+in post-fix notation (also known as Reverse Polish Notation). There is also a 
 static method provided to evaluate a mathematical expression represented in 
-postfix notation given an implementation of the <code>Math</code> interface is 
+post-fix notation given an implementation of the <code>Math</code> interface is 
 also provided. 
 
 You do need to understand the exact details of what RPN is in order to complete
@@ -105,11 +106,11 @@ a number or an operator. For example, you could write something like following:
 // string containing a mathematical expression represented in infix notation
 String expression = "4 + 2 ! / 3 - 7 * 2 ^ 3";
 
-// convert the expression into an array by splitting it by wite space
+// convert the expression into an array by splitting it by white space
 String infix[] = expression.split(" ");
 
 // use the ReversePolishNotation class to get an array containing the expression
-// in postfix notation
+// in post-fix notation
 String postfix[] = ReversePolishNotation.infixToPostfix(infix);
 
 // create an instance of your BasicMath class
@@ -124,13 +125,12 @@ http://en.wikipedia.org/wiki/Reverse_Polish_notation
 
 ## Design Suggestions
 
-I have included a mock-up of what I think the user interface should look like 
-below.
+A suggested mock-up of the graphical user interface is provided below.
 
 ![Calculator UI Mock-up](http://i.imgur.com/BKgzn.png "Calculator UI Mock-up")
 
-Your GUI should incorporate atleast the same functionality as the one in the
-aboce mock-up. The meaning for most of the buttons is obvious. The <code><</code> 
+Your GUI should incorporate at least the same functionality as the one in the
+above mock-up. The meaning for most of the buttons is obvious. The <code><</code> 
 button means backspace. The <code>X</code> button means clear the text area.
 The <code>Use RPN</code> button should toggle between "Use RPN" and use 
 "Use Basic", depending on which implementation of the <code>Math</code> interface
@@ -213,7 +213,7 @@ If you have any questions, please email them to Michael E. Cotterell at
 
  1. What do I do if the <code>sbt</code> command does not execute?
 
-    You probably need to make the file executable. To do this, simmply make sure 
+    You probably need to make the file executable. To do this, simply make sure 
     you are in the same directory as <code>sbt</code> and issue the following
     command:
 
