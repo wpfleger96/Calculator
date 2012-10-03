@@ -89,7 +89,7 @@ You may earn up to 5 points extra credit for each of the tasks listed below:
 
  2. Make a dialog box appear with a special message when a user enters the 
     following sequence of buttons on the keyboard (without the commas): up, up, 
-    down, down, left, right, B, A. The last two characters should be considered 
+    down, down, left, right, left, right, B, A. The last two characters should be considered 
     case-insensitive. 
 
 ## Note on Reverse Polish Notation (RPN)
@@ -155,7 +155,7 @@ A suggested mock-up of the graphical user interface is provided below.
 Your GUI should incorporate at least the same functionality as the one in the
 above mock-up. The meaning for most of the buttons is obvious. The <code><</code> 
 button means backspace. The <code>X</code> button means clear the text area.
-The <code>Use RPN</code> button should toggle between "Use RPN" and use 
+The <code>Use Recursive</code> button should toggle between "Use Recursive" and use 
 "Use Basic", depending on which implementation of the <code>Math</code> interface
 your code is using. In the mock-up above, the app is currently using the 
 <code>BasicMath</code> class as its' <code>Math</code> implementation. The 
