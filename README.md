@@ -132,6 +132,19 @@ sign then that number is treated as a negative number.
 For more general information on RPN, you can read its' WikiPedia page here:
 http://en.wikipedia.org/wiki/Reverse_Polish_notation
 
+## Notes on Recursive Math
+
+To make things easier, you may assume that RecursiveMath is only valid for
+non-negative operands. However, you still need to follow some rules when
+implementing.
+
+ 1. In the <code>add</code> and <code>subtract</code> methods, you may
+     only modifier any given number in the method by adding or subtracting 1.
+
+ 2. In the <code>multiply</code> and <code>divide</code> methods, if you need
+    to add and subtract numbers that are greater than 1, you may do so only by
+    calling your <code>add</code> and <code>subtract</code> methods.
+
 ## Design Suggestions
 
 You may design your calculator app to look as plain or as cool as you want.
