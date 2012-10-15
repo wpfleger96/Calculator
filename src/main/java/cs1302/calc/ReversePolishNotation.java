@@ -121,7 +121,7 @@ public class ReversePolishNotation {
 
 	for (int i = 0; i < postfix.length; i++) {
 
-	    if (!Character.isDigit(postfix[i].charAt(0))) {
+	    if (postfix[i].length() == 1 && !Character.isDigit(postfix[i].charAt(0))) {
 
 		// if the first character of the element is not a digit then we 
 		// assume it is an operator
