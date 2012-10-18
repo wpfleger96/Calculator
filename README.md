@@ -78,6 +78,8 @@ Before you submit your project, you need to perform the following tasks:
     # Project Submission
 
     Author: YOUR NAME (LAST 3 DIGITS OF 810 NUMBER HERE)
+
+    [If you did any of the exra credit then please indicate that here.]
     ```
         
 ## Extra Credit Project Tasks
