@@ -5,7 +5,11 @@ package cs1302.calc;
  * operation.
  */
 public class DomainException extends Exception {
-    
+
+    public DomainException() {
+	this("A domain exception has occurred.");
+    } // DomainException
+
     public DomainException(String message) {
 	super(message);
     } // DomainException
