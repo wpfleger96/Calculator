@@ -55,8 +55,8 @@ public interface Math {
 
     /**
      * Returns the result of the binary exponentiation operation "lhs ^ rhs". 
-     * This method should throw a DomainException if the second operand cannot
-     * be converted into an integer.
+     * This method should throw a DomainException if the implementation requires
+     * that one or more of the parameters be integers.
      *
      * @param lhs the first operand
      * @param rhs the second operand
