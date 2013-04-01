@@ -52,6 +52,8 @@ life a lot easier if you learn how to take advantage of them properly.
 
 ## Project Description
 
+![Calc!](http://i.imgur.com/VkYWqAn.png)
+
 Your goal is to develop a calculator app in Java with a graphical user interface
 (GUI) powered by Swing. You will be responsible for designing and implementing
 the user interface for your project (following a few guidelines). This 
@@ -79,7 +81,7 @@ Before you submit your project, you need to perform the following tasks:
     A button to switch between using "iteration" and "recursion"; 
     the ability to toggle individual bits on and off, updating the UI appropriately.
 
- 4. (30 points) Write a report analyzing the time complexity of each <code>Math</code>
+ 4. (40 points) Write a report analyzing the time complexity of each <code>Math</code>
     implementation. Give the time function and complexity class (using Big-O) for each
     method. Compare both implementation and write a sentence or two explaining the
     trade-offs between the two implementations.
