@@ -17,7 +17,6 @@ contained in the Resources section below in order to do your development on
 
 ## Collaboration Policy
 
-
 ### Pair Programming Guidelines
 
  * You and your partner should work together as much as possible, with the 
@@ -57,37 +56,29 @@ Your goal is to develop a calculator app in Java with a graphical user interface
 (GUI) powered by Swing. You will be responsible for designing and implementing
 the user interface for your project (following a few guidelines). This 
 calculator app is interesting in that we will provide two different 
-implementations for handling mathematical operations: a basic, iterative
+implementations for handling mathematical operations: an iterative
 implementation and a recursive implementation. This will be accomplished by 
 implementing the <code>Math</code> interface in two classes, 
-<code>BasicMath</code> and <code>RecursiveMath</code>. That's right, you'll be 
-implementing recursive methods for addition, subtraction, multiplication, 
-division, factorial, and exponentiation.
+<code>IterativeMath</code> and <code>RecursiveMath</code>.
 
 ## Project Tasks
 
 Before you submit your project, you need to perform the following tasks:
 
- 1. (10 points) Implement a basic implementation of the <code>Math</code> interface in the
-    <code>BasicMath</code> class. The implementations for **all** the methods in
-    this class are to be non-recursive.
+ 1. (10 points) Implement a iterative implementation of the <code>Math</code> interface in the
+    <code>IterativeMath</code> class. The implementations for **all** the methods in
+    this class are to be non-recursive. They are also to be writen using iteration/loops.
 
- 2. (20 points) Implement a recursive implementation of the <code>Math</code> interface in
+ 2. (10 points) Implement a recursive implementation of the <code>Math</code> interface in
     the <code>RecursiveMath</code> class. the implementations for **all** the
-    methods in this class are to be recursive. We will discuss how to do the
-    addition operation recursively in class. Since our implementation needs to
-    handle doubles, you may have one of your base cases handle the operation
-    explicitly when one of the numbers is less than 1.
+    methods in this class are to be recursive. 
 
  3. (40 points) Design and implement a GUI interface for your calculator app in the
-    <code>Calculator</code> class using Java Swing. You may need to add methods 
-    to this file as needed in order make your GUI functional. Currently, the
-    skeleton code for this class contains an example of how to create a button
-    in Swing and how to listen and react to it being clicked. Your GUI needs
-    to be able to evaluate mathematical expressions of an arbitrary length. It 
-    also needs to include a button for switching between using the two different
-    <code>Math</code> implementations. Please see the section titled 
-    "Design Suggestions" below for more information.
+    <code>Calculator</code> class using Java Swing. Your GUI must include the
+    following: 
+     * Text field for the mathematical expressions;
+     * A button to switch between using "iteration" and "recursion."
+     * The ability to toggle individual bits on and off, updating the UI appropriately.
 
  4. (20 points) Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
     classes in the <code>src/test/java/calc/1302</code> directory. This 
