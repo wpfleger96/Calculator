@@ -52,7 +52,7 @@ life a lot easier if you learn how to take advantage of them properly.
 
 ## Project Description
 
-![Calc!](http://i.imgur.com/sSYeqVE.png)
+![Calc!](http://i.imgur.com/1OwHxxD.png)
 
 Your goal is to develop a calculator app in Java with a graphical user interface
 (GUI) powered by Swing. You will be responsible for designing and implementing
@@ -175,9 +175,7 @@ implementing.
 You may design your calculator app to look as plain or as cool as you want.
 A suggested mock-up of the graphical user interface is provided below.
 
-![Calculator UI Mock-up](http://i.imgur.com/D47nZsX.png "Calculator UI Mock-up")
-
-![Calculator UI Mock-up](http://i.imgur.com/gj62Rvb.png "Calculator UI Mock-up")
+![Calculator UI Mock-up](http://i.imgur.com/1OwHxxD.png)
 
 Your GUI should incorporate at least the same functionality as the one in the
 above mock-up. The meaning for most of the buttons is obvious. The <code><</code> 
