@@ -75,10 +75,9 @@ Before you submit your project, you need to perform the following tasks:
 
  3. (40 points) Design and implement a GUI interface for your calculator app in the
     <code>Calculator</code> class using Java Swing. Your GUI must include the
-    following: 
-     * Text field for the mathematical expressions;
-     * A button to switch between using "iteration" and "recursion."
-     * The ability to toggle individual bits on and off, updating the UI appropriately.
+    following: Text field for the mathematical expressions;
+    A button to switch between using "iteration" and "recursion"; 
+    the ability to toggle individual bits on and off, updating the UI appropriately.
 
  4. (20 points) Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
     classes in the <code>src/test/java/calc/1302</code> directory. This 
