@@ -17,19 +17,39 @@ contained in the Resources section below in order to do your development on
 
 ## Collaboration Policy
 
- testing
 
 ### Pair Programming Guidelines
 
- * You and your partner should work together as much as possible, with the stipulation that at most 25% of your total time coding, testing, and debugging on the assignment can be working alone.
+ * You and your partner should work together as much as possible, with the 
+   stipulation that at most 25% of your total time coding, testing, and 
+   debugging on the assignment can be working alone.
 
- * When the pair gets back together after either partner has worked on the code alone, review, line by line, the work done alone before doing any new work. This is really easy if each person maintains their own branch and commits as they work. 
+ * When the pair gets back together after either partner has worked on the 
+   code alone, review, line by line, the work done alone before doing any new 
+   work. This is really easy if each person maintains their own branch and 
+   commits as they work. 
 
- * You and your partner should alternate driving and navigating, spending roughly equal amounts of time in each role.
+ * You and your partner should alternate driving and navigating, spending 
+   roughly equal amounts of time in each role.
 
 ### Suggestions
 
-blah
+I highly recommend that you follow the following workflow for development:
+
+ * When working with your partner, work in the <code>master</code> branch.
+
+ * Commit often using <code>git commit</code>.
+
+ * Push your branches to GitHub often using <code>git push remote branch-name-here</code>.
+
+ * When working alone, use your own _personal_ branch, committing often. When 
+   you get back together with your partner, merge both personal branches into
+   <code>master</code> and review the commit log. Once you've fixed merge
+   conflicts, push your merged <code>master</code> branch to GitHub before
+   continuing with your work.
+
+I know some of these suggestions sound like overkill, but they will make your
+life a lot easier if you learn how to take advantage of them properly.
 
 ## Project Description
 
