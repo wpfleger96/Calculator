@@ -111,15 +111,9 @@ Before you submit your project, you need to perform the following tasks:
         
 ## Extra Credit Project Tasks
 
-You may earn up to 5 points extra credit for each of the tasks listed below:
+You may earn up to 20 points extra credit for each of the tasks listed below:
 
- 1. Design your user interface so that the Calculator application can be used
-    entirely using the keyboard.
-
- 2. Make a dialog box appear with a special message when a user enters the 
-    following sequence of buttons on the keyboard (without the commas): up, up, 
-    down, down, left, right, left, right, B, A. The last two characters should be considered 
-    case-insensitive. 
+ 1. (20 points) When the Konami code is entered (you know the code by now), a playable game of Pong pops up, implemented in Swing.
 
 ## Note on Reverse Polish Notation (RPN)
 
@@ -163,7 +157,7 @@ http://en.wikipedia.org/wiki/Reverse_Polish_notation
 
 ## Notes on Recursive Math
 
-To make things easier, you may assume that RecursiveMath is only valid for
+To make things easier, you may assume that this calculator only works for
 non-negative operands. However, you still need to follow some rules when
 implementing.
 
@@ -179,15 +173,17 @@ implementing.
 You may design your calculator app to look as plain or as cool as you want.
 A suggested mock-up of the graphical user interface is provided below.
 
-![Calculator UI Mock-up](http://i.imgur.com/BKgzn.png "Calculator UI Mock-up")
+![Calculator UI Mock-up](http://i.imgur.com/D47nZsX.png "Calculator UI Mock-up")
+
+![Calculator UI Mock-up](http://i.imgur.com/gj62Rvb.png "Calculator UI Mock-up")
 
 Your GUI should incorporate at least the same functionality as the one in the
 above mock-up. The meaning for most of the buttons is obvious. The <code><</code> 
 button means backspace. The <code>X</code> button means clear the text area.
-The <code>Use Recursive</code> button should toggle between "Use Recursive" and use 
-"Use Basic", depending on which implementation of the <code>Math</code> interface
+The <code>Use Recursive</code> button should toggle between "Use Recursion" and use 
+"Use Iteration", depending on which implementation of the <code>Math</code> interface
 your code is using. In the mock-up above, the app is currently using the 
-<code>BasicMath</code> class as its' <code>Math</code> implementation. The 
+<code>IterativeMath</code> class as its' <code>Math</code> implementation. The 
 <code>^</code> button is for exponentiation and the <code>!</code> button is for 
 factorial.
 
