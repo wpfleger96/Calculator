@@ -15,6 +15,22 @@ your copy of the project publicly visible. Please follow the instructions
 contained in the Resources section below in order to do your development on
 <code>nike</code>.
 
+## Collaboration Policy
+
+ testing
+
+### Pair Programming Guidelines
+
+ * You and your partner should work together as much as possible, with the stipulation that at most 25% of your total time coding, testing, and debugging on the assignment can be working alone.
+
+ * When the pair gets back together after either partner has worked on the code alone, review, line by line, the work done alone before doing any new work. This is really easy if each person maintains their own branch and commits as they work. 
+
+ * You and your partner should alternate driving and navigating, spending roughly equal amounts of time in each role.
+
+### Suggestions
+
+blah
+
 ## Project Description
 
 Your goal is to develop a calculator app in Java with a graphical user interface
