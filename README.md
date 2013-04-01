@@ -145,10 +145,10 @@ String infix[] = expression.split(" ");
 String postfix[] = ReversePolishNotation.infixToPostfix(infix);
 
 // create an instance of your BasicMath class
-Math basicMath = new IterativeMath();
+Math iterativeMath = new IterativeMath();
 
 // use the ReversePolishNotation class to evaluate the expression
-double result = ReversePolishNotation.evaluate(basicMath, postfix);
+double result = ReversePolishNotation.evaluate(iterativeMath, postfix);
 ```
 
 Note: If an element of the infix array contains a number prefixed with a minus 
