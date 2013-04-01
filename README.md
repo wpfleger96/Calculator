@@ -143,7 +143,7 @@ String infix[] = expression.split(" ");
 String postfix[] = ReversePolishNotation.infixToPostfix(infix);
 
 // create an instance of your BasicMath class
-Math basicMath = new BasicMath();
+Math basicMath = new IterativeMath();
 
 // use the ReversePolishNotation class to evaluate the expression
 double result = ReversePolishNotation.evaluate(basicMath, postfix);
@@ -180,7 +180,7 @@ A suggested mock-up of the graphical user interface is provided below.
 Your GUI should incorporate at least the same functionality as the one in the
 above mock-up. The meaning for most of the buttons is obvious. The <code><</code> 
 button means backspace. The <code>X</code> button means clear the text area.
-The <code>Use Recursive</code> button should toggle between "Use Recursion" and use 
+The <code>Use Recursion</code> button should toggle between "Use Recursion" and use 
 "Use Iteration", depending on which implementation of the <code>Math</code> interface
 your code is using. In the mock-up above, the app is currently using the 
 <code>IterativeMath</code> class as its' <code>Math</code> implementation. The 
@@ -189,11 +189,23 @@ factorial.
 
 ## Resources
 
+**Note:** In order to follow some of the instructions below, you'll need to generate
+an SSH public for your <code>nike</code> account. You can find some instructions on that
+at the following website: https://help.github.com/articles/generating-ssh-keys#platform-all.
+
 The files for this project are hosted Github using <code>git</code>. They can be
-retrieved by cloning the repository found at <code>git://github.com/mepcotterell/cs1302-calculator.git</code>. 
+retrieved by cloning the repository found at <code>git@github.com:mepcotterell-cs1302/cs1302-calculator.git</code>. 
 For example, you can issue the following command to clone the repository:
 
-    $ git clone git@github.com:mepcotterell-cs1302/cs1302-calculator.git LastName-FirstName-p2
+    $ git clone git@github.com:mepcotterell-cs1302/cs1302-calculator.git LastName-Lastname-p3
+
+Once you the skeleton code cloned, you need to set your remote origin to the 
+repository provided to your group. 
+
+    $ git remote set-url origin git@github.com:mepcotterell-cs1302/groupname.git
+    $ git push -u origin master
+
+Now you are setup to work collaboratively with your teammate via GitHub.
 
 As always, I suggest developing directly on <code>nike.cs.uga.edu</code> because
 this is where your project will be run and tested. Since <code>git</code> is 
@@ -207,8 +219,6 @@ need only do a <code>git pull</code>.
 Also, since <code>git</code> is a decentralized version control system, you will
 have your own local copy of the repository. This means that you can log your 
 changes using commits and even revert to a previous revision if necessary.
-
-JavaDoc for the skeleton code should be available [here](http://cs.uga.edu/~mec/cs1302/projects/p2/cs1302-calculator/target/scala-2.9.2/api/).
 
 ## Directory Structure and Packages
 
@@ -227,10 +237,6 @@ order to compile your project, you can use the following command:
 
     $ ./sbt compile
 
-To run your JUnit tests, you may use the following command:
-
-    $ ./sbt test
-
 To run your project, use the following command:
 
     $ ./sbt run
@@ -241,9 +247,12 @@ In order to clean your project (remove compiled code), use the following command
 
 ## Submission Instructions
 
+In addition to submitting using the <code>submit</code> command below, you will also
+need to push your final changes to your GitHub repository.
+
 You will still be submitting your project via <code>nike</code>. Make sure your 
 work is on <code>nike.cs.uga.edu</code> in a directory called 
-<code>LastName-FirstName-p2</code>, and, from within the parent directory, 
+<code>LastName-LastName-p3</code>, and, from within the parent directory, 
 execute the following command:
 
     $ submit LastName_FirstName-p2 cs1302a
@@ -251,8 +260,8 @@ execute the following command:
 It is also a good idea to email a copy to yourself. To do this, simply execute 
 the following command, replacing the email address with your email address:
 
-    $ tar zcvf LastName-FirstName-p2.tar.gz LastName-FirstName-p2
-    $ mutt -s "[cs1302] p2" -a LastName-FirstName-p2.tar.gz -- your@email.com < /dev/null
+    $ tar zcvf LastName-LastName-p3.tar.gz LastName-LastName-p2
+    $ mutt -s "[cs1302] p2" -a LastName-LastName-p2.tar.gz -- your@email.com < /dev/null
 
 ## Questions
 
