@@ -73,18 +73,16 @@ Before you submit your project, you need to perform the following tasks:
     the <code>RecursiveMath</code> class. the implementations for **all** the
     methods in this class are to be recursive. 
 
- 3. (40 points) Design and implement a GUI interface for your calculator app in the
+ 3. (50 points) Design and implement a GUI interface for your calculator app in the
     <code>Calculator</code> class using Java Swing. Your GUI must include the
     following: Text field for the mathematical expressions;
     A button to switch between using "iteration" and "recursion"; 
     the ability to toggle individual bits on and off, updating the UI appropriately.
 
- 4. (20 points) Create JUnit tests for both the <code>BasicMath</code> and <code>RecursiveMath</code>
-    classes in the <code>src/test/java/calc/1302</code> directory. This 
-    directory already includes some unit tests for <code>Driver</code> and 
-    <code>ReversePolishNotation</code> classes that your instructor has
-    implemented. Do not cheat yourself by creating poor tests and or faking
-    your tests. They will be beneficial in helping you debug your code.
+ 4. (30 points) Write a report analyzing the time complexity of each <code>Math</code>
+    implementation. Give the time function and complexity class (using Big-O) for each
+    method. Compare both implementation and write a sentence or two explaining the
+    trade-offs between the two implementations.
 
  5. (10 points) Ensure that your code is properly documented using inline comments as 
     necessary. In general, you should describe in regular terms what it is the
