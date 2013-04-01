@@ -85,7 +85,9 @@ Before you submit your project, you need to perform the following tasks:
  4. (40 points) Write a report analyzing the time complexity of each <code>Math</code>
     implementation. Give the time function and complexity class (using Big-O) for each
     method. Compare both implementation and write a sentence or two explaining the
-    trade-offs between the two implementations.
+    trade-offs between the two implementations. This report should be formatted
+    using Markdown (similar to the contents of this README file) and saved in the
+    <code>REPORT.md</code> file.
 
  5. (10 points) Ensure that your code is properly documented using inline comments as 
     necessary. In general, you should describe in regular terms what it is the
