@@ -80,7 +80,7 @@ Before you submit your project, you need to perform the following tasks:
     following: Text field for the mathematical expressions;
     A button to switch between using "iteration" and "recursion"; 
     the ability to toggle individual bits on and off, updating the UI appropriately.
-    Your GUI must make use of some of the styling facilities available in Swing.
+    Your GUI must make use of some of the styling facilities available in Swing. 
 
  4. (40 points) Write a report analyzing the time complexity of each <code>Math</code>
     implementation. Give the time function and complexity class (using Big-O) for each
@@ -155,7 +155,7 @@ sign then that number is treated as a negative number.
 For more general information on RPN, you can read its' WikiPedia page here:
 http://en.wikipedia.org/wiki/Reverse_Polish_notation
 
-## Notes on Recursive Math
+## Notes on Math Implementations
 
 To make things easier, you may assume that this calculator only works for
 non-negative operands. However, you still need to follow some rules when
@@ -193,7 +193,7 @@ The files for this project are hosted Github using <code>git</code>. They can be
 retrieved by cloning the repository found at <code>git://github.com/mepcotterell/cs1302-calculator.git</code>. 
 For example, you can issue the following command to clone the repository:
 
-    $ git clone git://github.com/mepcotterell/cs1302-calculator.git LastName-FirstName-p2
+    $ git clone git@github.com:mepcotterell-cs1302/cs1302-calculator.git LastName-FirstName-p2
 
 As always, I suggest developing directly on <code>nike.cs.uga.edu</code> because
 this is where your project will be run and tested. Since <code>git</code> is 
