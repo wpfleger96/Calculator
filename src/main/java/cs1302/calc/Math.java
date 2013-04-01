@@ -12,7 +12,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public double add(double lhs, double rhs);
+    public int add(double lhs, double rhs);
 
     /**
      * Returns the result of the binary subtraction operation "lhs - rhs"
@@ -21,7 +21,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public double subtract(double lhs, double rhs);
+    public int subtract(double lhs, double rhs);
 
     /**
      * Returns the result of the binary multiplication operation "lhs * rhs"
@@ -30,7 +30,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public double multiply(double lhs, double rhs);
+    public int  multiply(double lhs, double rhs);
 
     /**
      * Returns the result of the binary division operation "lhs / rhs". This
@@ -41,7 +41,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public double divide(double lhs, double rhs) throws ArithmeticException;
+    public int divide(double lhs, double rhs) throws ArithmeticException;
 
     /**
      * Returns the result of the unary factorial operation "num !". This method
@@ -51,7 +51,7 @@ public interface Math {
      * @param num the operand
      * @return the result of the operation
      */
-    public double factorial(double num) throws DomainException;
+    public int factorial(double num) throws DomainException;
 
     /**
      * Returns the result of the binary exponentiation operation "lhs ^ rhs". 
@@ -62,7 +62,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public double pow(double lhs, double rhs) throws DomainException;
+    public inte pow(double lhs, double rhs) throws DomainException;
 
 } // Math
 
