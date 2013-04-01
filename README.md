@@ -196,10 +196,10 @@ an SSH public for your <code>nike</code> account. You can find some instructions
 at the following website: https://help.github.com/articles/generating-ssh-keys#platform-all.
 
 The files for this project are hosted Github using <code>git</code>. They can be
-retrieved by cloning the repository found at <code>git@github.com:mepcotterell-cs1302/cs1302-calculator.git</code>. 
+retrieved by cloning the repository found at <code>git://github.com/mepcotterell-cs1302/cs1302-calculator.git</code>. 
 For example, you can issue the following command to clone the repository:
 
-    $ git clone git@github.com:mepcotterell-cs1302/cs1302-calculator.git LastName-Lastname-p3
+    $ git clone git://github.com/mepcotterell-cs1302/cs1302-calculator.git LastName-Lastname-p3
 
 Once you the skeleton code cloned, you need to set your remote origin to the 
 repository provided to your group. 
