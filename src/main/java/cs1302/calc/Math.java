@@ -6,13 +6,29 @@ package cs1302.calc;
 public interface Math {
 
     /**
+     * Returns the result of incrementing the operand
+     *
+     * @param n the operand
+     * @return the result of n + 1
+     */
+    public int inc(int n);
+
+    /**
+     * Returns the result of deccrementing the operand
+     *
+     * @param n the operand
+     * @return the result of n - 1
+     */
+    public int dec(int n);
+
+    /**
      * Returns the result of the binary addition operation "lhs + rhs"
      *
      * @param lhs the first operand
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public int add(double lhs, double rhs);
+    public int add(int lhs, int rhs);
 
     /**
      * Returns the result of the binary subtraction operation "lhs - rhs"
@@ -21,7 +37,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public int subtract(double lhs, double rhs);
+    public int sub(int lhs, int rhs);
 
     /**
      * Returns the result of the binary multiplication operation "lhs * rhs"
@@ -30,7 +46,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public int  multiply(double lhs, double rhs);
+    public int  mul(int lhs, int rhs);
 
     /**
      * Returns the result of the binary division operation "lhs / rhs". This
@@ -41,7 +57,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public int divide(double lhs, double rhs) throws ArithmeticException;
+    public int divide(int lhs, int rhs) throws ArithmeticException;
 
     /**
      * Returns the result of the unary factorial operation "num !". This method
@@ -51,7 +67,7 @@ public interface Math {
      * @param num the operand
      * @return the result of the operation
      */
-    public int factorial(double num) throws DomainException;
+    public int factorial(int num) throws DomainException;
 
     /**
      * Returns the result of the binary exponentiation operation "lhs ^ rhs". 
@@ -62,7 +78,26 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public inte pow(double lhs, double rhs) throws DomainException;
+    public inte pow(int lhs, int rhs) throws DomainException;
+
+    /**
+     * Returns the result of the binary left-shift operation "lhs << rhs". 
+     *
+     * @param lhs the first operand
+     * @param rhs the second operand
+     * @return the result of the operation
+     */
+    public int lshift(int lhs, int rhs) throws DomainException;
+
+    /**
+     * Returns the result of the binary right-shift operation "lhs >> rhs". 
+     *
+     * @param lhs the first operand
+     * @param rhs the second operand
+     * @return the result of the operation
+     */
+    public int rshift(int lhs, int rhs) throws DomainException;
+
 
 } // Math
 

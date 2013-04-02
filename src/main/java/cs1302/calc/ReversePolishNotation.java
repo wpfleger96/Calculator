@@ -27,6 +27,8 @@ public class ReversePolishNotation {
 
     static {
 	Map<String, Integer> pMap = new HashMap<String, Integer>();
+	pMap.put("<<", 0);
+	pMap.put(">>", 0);
 	pMap.put("+", 1);
         pMap.put("-", 1);
         pMap.put("*", 2);
@@ -128,7 +130,17 @@ public class ReversePolishNotation {
 
 		String operator = postfix[i];
 		
-		if (operator.equals("+")) {
+		if (operator.equals("<<")) {
+		    double rhs = stack.pop();
+		    double lhs = stack.pop();
+		    double result = impl.lshift(lhs, rhs);
+		    stack.add(result);
+		} else if (operator.equals(">>")) {
+		    double rhs = stack.pop();
+		    double lhs = stack.pop();
+		    double result = impl.rshift(lhs, rhs);
+		    stack.add(result);
+		} else if (operator.equals("+")) {
 		    double rhs = stack.pop();
 		    double lhs = stack.pop();
 		    double result = impl.add(lhs, rhs);
@@ -136,17 +148,17 @@ public class ReversePolishNotation {
 		} else if (operator.equals("-")) {
 		    double rhs = stack.pop();
 		    double lhs = stack.pop();
-		    double result = impl.subtract(lhs, rhs);
+		    double result = impl.sub(lhs, rhs);
 		    stack.add(result);
 		} else if (operator.equals("*")) {
 		    double rhs = stack.pop();
 		    double lhs = stack.pop();
-		    double result = impl.multiply(lhs, rhs);
+		    double result = impl.mul(lhs, rhs);
 		    stack.add(result);
 		} else if (operator.equals("/")) {
 		    double rhs = stack.pop();
 		    double lhs = stack.pop();
-		    double result = impl.divide(lhs, rhs);
+		    double result = impl.div(lhs, rhs);
 		    stack.add(result);
 		} else if (operator.equals("^")) {
 		    double rhs = stack.pop();
@@ -155,7 +167,7 @@ public class ReversePolishNotation {
 		    stack.add(result);
 		} else if (operator.equals("!")) {
 		    double num = stack.pop();
-		    double result = impl.factorial(num);
+		    double result = impl.fac(num);
 		    stack.add(result);
 		} // if
 
