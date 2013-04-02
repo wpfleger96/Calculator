@@ -17,11 +17,31 @@ contained in the Resources section below in order to do your development on
 
 ## Collaboration Policy
 
-### Pair Programming Guidelines
+Students are required to work in groups of two for this project. Furthermore, 
+each group needs to engage in pair programming. Pair programming is an agile 
+software development technique in which two programmers work together at one 
+workstation. One, the driver, writes code while the other, the navigator, 
+reviews each line of code as it is typed in. The two programmers switch roles 
+frequently.
+
+Yes, this involves physically meeting with your partner. Not being able to find 
+time is NOT an excuse for not participating. If you need a place to meet and 
+work on the project then I suggest the 307 lab in Boyd. The iMacs are already 
+setup with everything you need. You login to them with your <code>nike</code>
+account, open up the terminal application and SSH into your <code>nike</code>
+account.
+
+Furthermore, we will track your progress using git commit logs. You will be 
+required to use git for this project. A portion of your grade will be determined 
+based on you and your partner's git log. Please follow the directions outlined in
+the resources section carefully in order to make sure and your partner have this 
+setup properly.
+
+### Some Pair Programming Guidelines
 
  * You and your partner should work together as much as possible, with the 
    stipulation that at most 25% of your total time coding, testing, and 
-   debugging on the assignment can be working alone.
+   debugging on the assignment can be done alone.
 
  * When the pair gets back together after either partner has worked on the 
    code alone, review, line by line, the work done alone before doing any new 
@@ -48,7 +68,7 @@ I highly recommend that you follow the following workflow for development:
    continuing with your work.
 
 I know some of these suggestions sound like overkill, but they will make your
-life a lot easier if you learn how to take advantage of them properly.
+life a lot easier if you learn how to take advantage of them properly. 
 
 ## Project Description
 
@@ -67,32 +87,75 @@ implementing the <code>Math</code> interface in two classes,
 
 Before you submit your project, you need to perform the following tasks:
 
- 1. (10 points) Implement a iterative implementation of the <code>Math</code> interface in the
-    <code>IterativeMath</code> class. The implementations for **all** the methods in
-    this class are to be non-recursive. They are also to be writen using iteration/loops.
+ 1. (2013-04-05) (10 points) Implement a iterative implementation of the <code>Math</code> 
+    interface in the <code>IterativeMath</code> class. The implementations for 
+    **all** the methods in this class are to be non-recursive. They are to be 
+    writen using iteration/loops. Just to be clear, you are NOT allowed to
+    implement these functions the naive way. For example, you cannot implement
+    addition as <code>return lhs + rhs</code>. You must implement it using a
+    loop. In fact, here is an example of how to implement the 
+    <code>add</code> method:
+    ```java
+    public int add(int lhs, int rhs) {
+        int sum = lhs;    
+        while (rhs > 0) {
+            sum = inc(sum);
+            rhs = dec(rhs);
+        } // while
+        return sum;
+    } // add
+    ```
+    There are some more notes on implementing math functions in another
+    section below. **You need to have this part committed to your git repository
+    before 2013-04-05 @ 11:59 PM** The grader will deduct 5 points if your
+    git log does not reflect this upon submission.
 
- 2. (10 points) Implement a recursive implementation of the <code>Math</code> interface in
-    the <code>RecursiveMath</code> class. the implementations for **all** the
-    methods in this class are to be recursive. 
+ 2. (2013-04-05) (10 points) Implement a recursive implementation of the <code>Math</code> 
+    interface in the <code>RecursiveMath</code> class. the implementations for 
+    **all** the methods in this class are to be recursive. You are not required
+    to use accumulator recursion, however, doing so will make the transition
+    from iteration to recursion a lot easier, especially for the math methods
+    we haven't explicitly covered in class. There are some more notes on 
+    implementing math functions in another section below. **You need to have 
+    this part committed to your git repository before 2013-04-05 @ 11:59 PM** 
+    The grader will deduct 5 points if your git log does not reflect this upon 
+    submission.
 
- 3. (50 points) Design and implement a GUI interface for your calculator app in the
-    <code>Calculator</code> class using Java Swing. Your GUI must include the
-    following: Text field for the mathematical expressions;
-    A button to switch between using "iteration" and "recursion"; 
+ 3. (2013-04-07) (10 points) Design your calculator's GUI interface. You can use 
+    a mock-up tool such as [](http://creately.com/Online-UI-Mockups-and-Wireframes) 
+    or [Pencil](http://pencil.evolus.vn/) (or similar) to make this 
+    easier. Your GUI should allow users to take advantage of all of the
+    operators defined in the <code>Math</code> interface. You mockup and final
+    program need to contain the following elements: Text field for the mathematical 
+    expressions and the computed numbers; A button to switch between using "iteration" 
+    and "recursion"; 
     the ability to toggle individual bits on and off, updating the UI appropriately.
     Your GUI must make use of some of the styling facilities available in Swing. 
+    You will include your mockups in the <code>MOCKUP.md</code> file. **You need to 
+    have this part committed to your git repository before 2013-04-07 @ 11:59 PM** 
+    The grader will deduct 5 points if your git log does not reflect this upon 
+    submission.
 
- 4. (40 points) Write a report analyzing the time complexity of each <code>Math</code>
+ 4. (2013-04-12) (40 points) Implement a GUI interface for your calculator app in the
+    <code>Calculator</code> class (and other classes as needed) using Java Swing. 
+    Your GUI must include the elements you described in your mockups. **You need to 
+    have this part committed to your git repository before 2013-04-12 @ 11:59 PM** 
+    The grader will deduct 5 points if your git log does not reflect this upon 
+    submission.
+
+ 4. (2013-04-14) (40 points) Write a report analyzing the time complexity of each <code>Math</code>
     implementation. Give the time function and complexity class (using Big-O) for each
     method. Compare both implementation and write a sentence or two explaining the
     trade-offs between the two implementations. This report should be formatted
     using Markdown (similar to the contents of this README file) and saved in the
-    <code>REPORT.md</code> file.
+    <code>REPORT.md</code> file. **You need to have this part committed to your git 
+    repository before 2013-04-14 @ 11:59 PM** The grader will deduct 5 points if 
+    your git log does not reflect this upon submission.
 
  5. (10 points) Ensure that your code is properly documented using inline comments as 
     necessary. In general, you should describe in regular terms what it is the
     code that you are writing is doing. A small example of such comments can be
-    seen in the <code>createAndShowGUI</code> method in the  <code>Calculator</code>
+    seen in the <code>createAndShowGUI</code> method in the <code>Calculator</code>
     class. Please note that you do not need to write JavaDoc comments for the 
     methods that implement methods in the <code>Math</code> interface as they 
     will inherit the comments from the interface. However, if you create any new
@@ -110,7 +173,7 @@ Before you submit your project, you need to perform the following tasks:
 
     [If you did any of the exra credit then please indicate that here.]
     ```
-        
+
 ## Extra Credit Project Tasks
 
 You may earn up to 20 points extra credit for each of the tasks listed below:
