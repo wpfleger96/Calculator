@@ -57,7 +57,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public int divide(int lhs, int rhs) throws ArithmeticException;
+    public int div(int lhs, int rhs) throws ArithmeticException;
 
     /**
      * Returns the result of the unary factorial operation "num !". This method
@@ -67,7 +67,7 @@ public interface Math {
      * @param num the operand
      * @return the result of the operation
      */
-    public int factorial(int num) throws DomainException;
+    public int fac(int num) throws DomainException;
 
     /**
      * Returns the result of the binary exponentiation operation "lhs ^ rhs". 
