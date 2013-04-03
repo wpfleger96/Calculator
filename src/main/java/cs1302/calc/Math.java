@@ -78,7 +78,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public inte pow(int lhs, int rhs) throws DomainException;
+    public int pow(int lhs, int rhs) throws DomainException;
 
     /**
      * Returns the result of the binary left-shift operation "lhs << rhs". 
