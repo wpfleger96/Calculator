@@ -264,6 +264,8 @@ I've created a handout for you guys to follow that explains what you need to do
 in order to set everything up. It is available 
 [here](https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf).
 
+--> https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf
+
 Now you are setup to work collaboratively with your teammate via GitHub.
 
 As always, I suggest developing directly on <code>nike.cs.uga.edu</code> because
