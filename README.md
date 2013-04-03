@@ -259,15 +259,10 @@ at the following website: https://help.github.com/articles/generating-ssh-keys#p
 
 The files for this project are hosted Github using <code>git</code>. They can be
 retrieved by cloning the repository found at <code>git://github.com/mepcotterell-cs1302/cs1302-calculator.git</code>. 
-For example, you can issue the following command to clone the repository:
 
-    $ git clone git://github.com/mepcotterell-cs1302/cs1302-calculator.git LastName-Lastname-p3
-
-Once you the skeleton code cloned, you need to set your remote origin to the 
-repository provided to your group. 
-
-    $ git remote set-url origin git@github.com:mepcotterell-cs1302/groupname.git
-    $ git push -u origin master
+I've created a handout for you guys to follow that explains what you need to do
+in order to set everything up. It is available 
+[here](https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf).
 
 Now you are setup to work collaboratively with your teammate via GitHub.
 
