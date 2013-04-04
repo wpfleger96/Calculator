@@ -67,7 +67,7 @@ public interface Math {
      * @param num the operand
      * @return the result of the operation
      */
-    public int fac(int num) throws DomainException;
+    public int fac(int num);
 
     /**
      * Returns the result of the binary exponentiation operation "lhs ^ rhs". 
@@ -78,7 +78,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public int pow(int lhs, int rhs) throws DomainException;
+    public int pow(int lhs, int rhs);
 
     /**
      * Returns the result of the binary left-shift operation "lhs << rhs". 
@@ -87,7 +87,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public int lshift(int lhs, int rhs) throws DomainException;
+    public int lshift(int lhs, int rhs);
 
     /**
      * Returns the result of the binary right-shift operation "lhs >> rhs". 
@@ -96,7 +96,7 @@ public interface Math {
      * @param rhs the second operand
      * @return the result of the operation
      */
-    public int rshift(int lhs, int rhs) throws DomainException;
+    public int rshift(int lhs, int rhs);
 
 
 } // Math
