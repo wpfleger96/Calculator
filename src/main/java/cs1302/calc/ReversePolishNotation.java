@@ -27,8 +27,8 @@ public class ReversePolishNotation {
 
     static {
 	Map<String, Integer> pMap = new HashMap<String, Integer>();
-	pMap.put("<<", 0);
-	pMap.put(">>", 0);
+	pMap.put("<", 0);
+	pMap.put(">", 0);
 	pMap.put("+", 1);
         pMap.put("-", 1);
         pMap.put("*", 2);
@@ -130,12 +130,12 @@ public class ReversePolishNotation {
 
 		String operator = postfix[i];
 		
-		if (operator.equals("<<")) {
+		if (operator.equals("<")) {
 		    int rhs = stack.pop();
 		    int lhs = stack.pop();
 		    int result = impl.lshift(lhs, rhs);
 		    stack.add(result);
-		} else if (operator.equals(">>")) {
+		} else if (operator.equals(">")) {
 		    int rhs = stack.pop();
 		    int lhs = stack.pop();
 		    int result = impl.rshift(lhs, rhs);
@@ -174,6 +174,7 @@ public class ReversePolishNotation {
 	    } else {
 
 		// otherwise we assume it is an operand and add it to the stack
+		
 		stack.add(Integer.parseInt(postfix[i]));
 
 	    } // if
