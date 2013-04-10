@@ -116,7 +116,7 @@ public class ReversePolishNotation {
      * @param postfix the mathematical expression in postfix notation
      * @return the result of evaluating the expression
      */
-    public static int evaluate(Math impl, String[] postfix) throws ArithmeticException, DomainException, NumberFormatException {
+    public static int evaluate(Math impl, String[] postfix) throws ArithmeticException, NumberFormatException {
 
 	// a stack for implementing the evaluation
 	Stack<Integer> stack = new Stack<Integer>();
