@@ -136,7 +136,7 @@ Before you submit your project, you need to perform the following tasks:
     The grader will deduct 5 points if your git log does not reflect this upon 
     submission.
 
- 4. (2013-04-12) (40 points) Implement a GUI interface for your calculator app in the
+ 4. (2013-04-13) (40 points) Implement a GUI interface for your calculator app in the
     <code>Calculator</code> class (and other classes as needed) using Java Swing. 
     Your GUI must include the elements you described in your mockups. **You need to 
     have this part committed to your git repository before 2013-04-12 @ 11:59 PM** 
@@ -211,7 +211,7 @@ String postfix[] = ReversePolishNotation.infixToPostfix(infix);
 Math iterativeMath = new IterativeMath();
 
 // use the ReversePolishNotation class to evaluate the expression
-double result = ReversePolishNotation.evaluate(iterativeMath, postfix);
+int result = ReversePolishNotation.evaluate(iterativeMath, postfix);
 ```
 
 Note: If an element of the infix array contains a number prefixed with a minus 
