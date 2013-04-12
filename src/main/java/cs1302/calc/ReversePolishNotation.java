@@ -33,8 +33,8 @@ public class ReversePolishNotation {
         pMap.put("-", 1);
         pMap.put("*", 2);
         pMap.put("/", 2);
-	pMap.put("!", 3);
-	pMap.put("^", 4);
+	pMap.put("^", 3);
+	pMap.put("!", 4);
 	precedenceMap = Collections.unmodifiableMap(pMap);
     } // static
 
