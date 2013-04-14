@@ -316,7 +316,7 @@ work is on <code>nike.cs.uga.edu</code> in a directory called
 <code>LastName-LastName-p3</code>, and, from within the parent directory, 
 execute the following command:
 
-    $ submit LastName_FirstName-p2 cs1302a
+    $ submit LastName_LastName-p3 cs1302b
 
 It is also a good idea to email a copy to yourself. To do this, simply execute 
 the following command, replacing the email address with your email address:
