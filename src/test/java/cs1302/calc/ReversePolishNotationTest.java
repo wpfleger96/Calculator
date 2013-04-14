@@ -12,6 +12,33 @@ import static org.junit.Assert.assertTrue;
  */
 public class ReversePolishNotationTest {
 
+    public static String[][] examples = {
+	{"1 < 2", "1 2 <"},
+        {"4 < 1 + 8 < 2", "4 1 8 + < 2 <"},
+        {"4 < 1 + 8 < 2 * 3", "4 1 8 + < 2 3 * <"},
+	{"4 < 1 - 8 < 2", "4 1 8 - < 2 <"},
+        {"4 < 1 * 8 < 2", "4 1 8 * < 2 <"},
+        {"4 < 1 / 8 < 2", "4 1 8 / < 2 <"},
+	{"2 > 1", "2 1 >"}, 
+	{"4 > 1 + 8 > 2", "4 1 8 + > 2 >"},
+        {"4 > 1 + 8 > 2 * 3", "4 1 8 + > 2 3 * >"},
+	{"4 > 1 - 8 > 2", "4 1 8 - > 2 >"},
+	{"4 > 1 * 8 > 2", "4 1 8 * > 2 >"},
+	{"4 > 1 / 8 > 2", "4 1 8 / > 2 >"},
+	{"1 + 2", "1 2 +"},
+	{"1 - 2", "1 2 -"},
+	{"1 * 2", "1 2 *"},
+	{"1 / 2", "1 2 /"},
+	{"1 ^ 2", "1 2 ^"},
+	{"222 + 32 * 5 + 1", "222 32 5 * + 1 +"},
+	{"4 !", "4 !"},
+	{"4 + 2 ! / 3 - 7 * 2 ^ 3", "4 2 ! 3 / + 7 2 3 ^ * -"},
+	{"45 / 10", "45 10 /"},
+	{"9 < 2", "9 2 <"},
+	{"20 !", "20 !"},
+	{"2 * 3 ! ^ 5 + 9", "2 3 ! * 5 ^ * 9 +"}
+    };
+     
     /**
      * Returns a String representation of a postfix expression returned by the
      * infixToPostfix method in the ReversePolishNotation class.
@@ -25,19 +52,6 @@ public class ReversePolishNotationTest {
 
     @Test
     public void testInfixToPostfix() {
-
-	String examples[][] = {
-	    {"1 + 2", "1 2 +"},
-	    {"1 - 2", "1 2 -"},
-	    {"1 * 2", "1 2 *"},
-	    {"1 / 2", "1 2 /"},
-	    {"1 ^ 2", "1 2 ^"},
-	    {"4 !", "4 !"},
-	    {"4 + 2 ! / 3 - 7 * 2 ^ 3", "4 2 ! 3 / + 7 2 3 ^ * -"}
-	};
-
-	String infix = "";
-	String expected = "[1, 2, +, 3, +]";
 
 	for (String[] example: examples) {
 	    String message = String.format("\"%s\" --> \"%s\" (expected \"%s\")", example[0], getPostfix(example[0]), example[1]);
