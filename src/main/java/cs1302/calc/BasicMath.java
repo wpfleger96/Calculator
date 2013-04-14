@@ -4,6 +4,8 @@ package cs1302.calc;
  * Provides a basic implementation of the operations defined in the Math
  * interface. This implementation assumes that the inputs to each method are
  * non-negative integers.
+ *
+ * @author Michael E. Cotterell <mepcotterell@gmail.com>
  */
 public class BasicMath implements Math {
 
@@ -35,10 +37,10 @@ public class BasicMath implements Math {
 
     public int fac(int num) {
 	// THE NARWHAL BACONS!
-	int product = 1;
-	int n       = num + 1;
-        while (n --> 1) product *= n; // WAT!?
-	return product;
+	int product = 1;              // products start with one
+	int n       = ++num;          // increment, like a boss
+        while (n --> 2) product *= n; // while n approaches 2, multiply
+	return product;               // wait, "-->",  WAT!?
     } // fac
 
     public int pow(int lhs, int rhs) {
