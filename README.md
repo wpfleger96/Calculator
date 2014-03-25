@@ -135,7 +135,7 @@ Before you submit your project, you need to perform the following tasks:
     expressions and the computed numbers; A button to switch between using "iteration" 
     and "recursion"; 
     the ability to toggle individual bits on and off, updating the UI appropriately.
-    Your GUI must make use of some of the styling facilities available in Swing. 
+    Your GUI must make use of some of the styling facilities available in JavaFX. 
     You will include your mockups in the <code>MOCKUP.md</code> file. **You need to 
     have this part committed to your git repository before 2014-04-07 @ 11:55 PM** 
     The grader will deduct 5 points if your Git log does not reflect this upon 
@@ -145,6 +145,7 @@ Before you submit your project, you need to perform the following tasks:
     <code>Calculator</code> class (and other classes as needed) using JavaFX. 
     Your GUI must include the elements you described in your mockups. 
     The skeleton code is already setup for a basic JavaFX FXML application.
+    I reccommend styling your app using CSS.
     **You need to 
     have this part committed to your git repository before 2013-04-14 @ 11:59 PM** 
     The grader will deduct 5 points if your git log does not reflect this upon 
