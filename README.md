@@ -147,7 +147,7 @@ Before you submit your project, you need to perform the following tasks:
     The skeleton code is already setup for a basic JavaFX FXML application.
     I reccommend styling your app using CSS.
     **You need to 
-    have this part committed to your git repository before 2013-04-14 @ 11:59 PM** 
+    have this part committed to your git repository before 2014-04-14 @ 11:59 PM** 
     The grader will deduct 5 points if your git log does not reflect this upon 
     submission.
 
