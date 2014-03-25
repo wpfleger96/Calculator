@@ -1,21 +1,38 @@
 package cs1302.calc;
 
-/**
- * This class is the entry point into the application.
- */
-public class Driver {
+import javafx.fxml.FXMLLoader;
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+import java.io.IOException;
+ 
+public class Driver extends Application {
 
-    /**
-     * The main entry point into the application.
-     *
-     * @param args command line arguments
-     */
     public static void main(String[] args) {
-	javax.swing.SwingUtilities.invokeLater(new Runnable() {
-	    public void run() {
-                Calculator.createAndShowGUI();
-	    } // run
-	});
+        launch(args);
     } // main
+    
+    @Override
+    public void start(Stage primaryStage) {
+
+	Parent root = null;
+
+	try {
+	    root = FXMLLoader.load(getClass().getResource("/calc.fxml"));
+	} catch (IOException e) {
+	    System.out.println(e);
+	    System.exit(1);
+	} // try
+
+        primaryStage.setTitle("CalcFX!");
+	primaryStage.setScene(new Scene(root, 640, 480));
+        primaryStage.show();
+
+    } // start
 
 } // Driver
