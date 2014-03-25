@@ -141,8 +141,8 @@ Before you submit your project, you need to perform the following tasks:
     The grader will deduct 5 points if your Git log does not reflect this upon 
     submission.
 
- 4. (2014-04-14) (50 points) Implement a GUI interface for your calculator app in the
-    <code>Calculator</code> class (and other classes as needed) using JavaFX. 
+ 4. (2014-04-14) (50 points) Implement a GUI interface for your calculator app
+    using JavaFX. 
     Your GUI must include the elements you described in your mockups. 
     The skeleton code is already setup for a basic JavaFX FXML application.
     I reccommend styling your app using CSS.
