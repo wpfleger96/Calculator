@@ -1,13 +1,13 @@
 # CSCI 1302 - Calculator Project (cs1302-calculator)
 
 Skeleton code for the Calculator project assigned to the students in Michael E. 
-Cotterell's Spring 2013 CSCI 1302 class at the University of Georgia. Please read 
+Cotterell's Spring 2014 CSCI 1302 class at the University of Georgia. Please read 
 the entirety of this file before beginning your project.
 
 ## Academic Honesty
 
 You implicitly agree to Academic Honesty policy as outlined in the course 
-syllabus and course website (available at: http://cs.uga.edu/~mec/cs1302/).
+syllabus.
 
 In accordance with the notice above, I must caution you to **not** fork this
 repository on GitHub if you have an account. Doing so will more than likely make
@@ -31,9 +31,9 @@ setup with everything you need. You login to them with your <code>nike</code>
 account, open up the terminal application and SSH into your <code>nike</code>
 account.
 
-Furthermore, we will track your progress using git commit logs. You will be 
-required to use git for this project. A portion of your grade will be determined 
-based on you and your partner's git log. Please follow the directions outlined in
+Furthermore, we will track your progress using Git commit logs. You will be 
+required to use Git for this project. A portion of your grade will be determined 
+based on you and your partner's Git log. Please follow the directions outlined in
 the resources section carefully in order to make sure and your partner have this 
 setup properly.
 
@@ -51,6 +51,9 @@ setup properly.
  * You and your partner should alternate driving and navigating, spending 
    roughly equal amounts of time in each role.
 
+ * After the project is completed, a pair programming survey will be made
+   available for both partners to complete.
+
 ### Suggestions
 
 I highly recommend that you follow the following workflow for development:
@@ -59,7 +62,9 @@ I highly recommend that you follow the following workflow for development:
 
  * Commit often using <code>git commit</code>.
 
- * Push your branches to GitHub often using <code>git push remote branch-name-here</code>.
+ * Push your branches to GitHub often using <code>git push remote origin</code>.
+   You will need to follow the GitHub handout linked below in order for this
+   to work correctly.
 
  * When working alone, use your own _personal_ branch, committing often. When 
    you get back together with your partner, merge both personal branches into
@@ -74,12 +79,12 @@ life a lot easier if you learn how to take advantage of them properly.
 
 ![Calc!](http://i.imgur.com/1K8mRIZ.png)
 
-Your goal is to develop a calculator app in Java with a graphical user interface
-(GUI) powered by Swing. You will be responsible for designing and implementing
+Your goal is to develop a calculator app in Java 7 with a graphical user interface
+(GUI) powered by JavaFX. You will be responsible for designing and implementing
 the user interface for your project (following a few guidelines). This 
 calculator app is interesting in that we will provide two different 
 implementations for handling mathematical operations: an iterative
-implementation and a recursive implementation. This will be accomplished by 
+implementation (loops) and a recursive implementation. This will be accomplished by 
 implementing the <code>Math</code> interface in two classes, 
 <code>IterativeMath</code> and <code>RecursiveMath</code>.
 
@@ -87,7 +92,7 @@ implementing the <code>Math</code> interface in two classes,
 
 Before you submit your project, you need to perform the following tasks:
 
- 1. (2013-04-05) (10 points) Implement a iterative implementation of the <code>Math</code> 
+ 1. (2014-03-31-MON) (10 points) Implement a iterative implementation of the <code>Math</code> 
     interface in the <code>IterativeMath</code> class. The implementations for 
     **all** the methods in this class are to be non-recursive. They are to be 
     writen using iteration/loops. Just to be clear, you are NOT allowed to
@@ -107,21 +112,21 @@ Before you submit your project, you need to perform the following tasks:
     ```
     There are some more notes on implementing math functions in another
     section below. **You need to have this part committed to your git repository
-    before 2013-04-05 @ 11:59 PM** The grader will deduct 5 points if your
-    git log does not reflect this upon submission.
+    before 2014-03-31 @ 11:55 PM** The grader will deduct 5 points if your
+    Git log does not reflect this upon submission.
 
- 2. (2013-04-05) (10 points) Implement a recursive implementation of the <code>Math</code> 
+ 2. (2014-03-31-MON) (10 points) Implement a recursive implementation of the <code>Math</code> 
     interface in the <code>RecursiveMath</code> class. the implementations for 
     **all** the methods in this class are to be recursive. You are not required
     to use accumulator recursion, however, doing so will make the transition
     from iteration to recursion a lot easier, especially for the math methods
     we haven't explicitly covered in class. There are some more notes on 
     implementing math functions in another section below. **You need to have 
-    this part committed to your git repository before 2013-04-05 @ 11:59 PM** 
-    The grader will deduct 5 points if your git log does not reflect this upon 
+    this part committed to your git repository before 2014-03-31 @ 11:55 PM** 
+    The grader will deduct 5 points if your Git log does not reflect this upon 
     submission.
 
- 3. (2013-04-07) (10 points) Design your calculator's GUI interface. You can use 
+ 3. (2014-04-07-MON) (20 points) Design your calculator's GUI interface. You can use 
     a mock-up tool such as [](http://creately.com/Online-UI-Mockups-and-Wireframes) 
     or [Pencil](http://pencil.evolus.vn/) (or similar) to make this 
     easier. Your GUI should allow users to take advantage of all of the
@@ -132,25 +137,18 @@ Before you submit your project, you need to perform the following tasks:
     the ability to toggle individual bits on and off, updating the UI appropriately.
     Your GUI must make use of some of the styling facilities available in Swing. 
     You will include your mockups in the <code>MOCKUP.md</code> file. **You need to 
-    have this part committed to your git repository before 2013-04-07 @ 11:59 PM** 
-    The grader will deduct 5 points if your git log does not reflect this upon 
+    have this part committed to your git repository before 2014-04-07 @ 11:55 PM** 
+    The grader will deduct 5 points if your Git log does not reflect this upon 
     submission.
 
- 4. (2013-04-13) (40 points) Implement a GUI interface for your calculator app in the
-    <code>Calculator</code> class (and other classes as needed) using Java Swing. 
-    Your GUI must include the elements you described in your mockups. **You need to 
-    have this part committed to your git repository before 2013-04-12 @ 11:59 PM** 
+ 4. (2014-04-14) (50 points) Implement a GUI interface for your calculator app in the
+    <code>Calculator</code> class (and other classes as needed) using JavaFX. 
+    Your GUI must include the elements you described in your mockups. 
+    The skeleton code is already setup for a basic JavaFX FXML application.
+    **You need to 
+    have this part committed to your git repository before 2013-04-14 @ 11:59 PM** 
     The grader will deduct 5 points if your git log does not reflect this upon 
     submission.
-
- 4. (2013-04-14) (40 points) Write a report analyzing the time complexity of each <code>Math</code>
-    implementation. Give the time function and complexity class (using Big-O) for each
-    method. Compare both implementation and write a sentence or two explaining the
-    trade-offs between the two implementations. This report should be formatted
-    using Markdown (similar to the contents of this README file) and saved in the
-    <code>REPORT.md</code> file. **You need to have this part committed to your git 
-    repository before 2013-04-14 @ 11:59 PM** The grader will deduct 5 points if 
-    your git log does not reflect this upon submission.
 
  5. (10 points) Ensure that your code is properly documented using inline comments as 
     necessary. In general, you should describe in regular terms what it is the
@@ -160,7 +158,8 @@ Before you submit your project, you need to perform the following tasks:
     methods that implement methods in the <code>Math</code> interface as they 
     will inherit the comments from the interface. However, if you create any new
     methods or classes then they will need to be properly documented using
-    JavaDoc comments and tags.
+    JavaDoc comments and tags. We will be using <code>sbt doc</code> in order to
+    check that you've properly written JavaDoc comments for all of your methods.
 
  6. Update the <code>README.md</code> in your project directory to contain the 
     following information at the top of the file (updating it with your own 
@@ -178,7 +177,8 @@ Before you submit your project, you need to perform the following tasks:
 
 You may earn up to 20 points extra credit for each of the tasks listed below:
 
- 1. (20 points) When the Konami code is entered (you know the code by now), a playable game of Pong pops up, implemented in Swing.
+ 1. (20 points) When the Konami code is entered (you know the code by now), 
+    a playable game of Pong pops up, implemented in JavaFX.
 
 ## Note on Reverse Polish Notation (RPN)
 
@@ -190,7 +190,7 @@ static method provided to evaluate a mathematical expression represented in
 post-fix notation given an implementation of the <code>Math</code> interface is 
 also provided. 
 
-You do need to understand the exact details of what RPN is in order to complete
+You do not need to understand the exact details of what RPN is in order to complete
 this project, however, you do need to understand what the input to the <code>infixToPostfix</code>
 method needs to look like. The method takes one parameter, an array of Strings.
 Each element of this array should contain the String representation of either
@@ -227,11 +227,16 @@ non-negative operands. However, you still need to follow some rules when
 implementing.
 
  1. In the <code>add</code> and <code>subtract</code> methods, you may
-     only modifier any given number in the method by adding or subtracting 1.
+    only modifier any given number in the method by adding or subtracting 1.
+    These implementations will be similar to the examples provided
+    in lecture, except that the successor and predecessor methods have
+    been renamed to <code>inc</code> (increment) and <code>dec</code>
+    (decrement). 
 
  2. In the <code>multiply</code> and <code>divide</code> methods, if you need
     to add and subtract numbers that are greater than 1, you may do so only by
     calling your <code>add</code> and <code>subtract</code> methods.
+
 
 ## Design Suggestions
 
@@ -321,8 +326,8 @@ execute the following command:
 It is also a good idea to email a copy to yourself. To do this, simply execute 
 the following command, replacing the email address with your email address:
 
-    $ tar zcvf LastName-LastName-p3.tar.gz LastName-LastName-p2
-    $ mutt -s "[cs1302] p2" -a LastName-LastName-p2.tar.gz -- your@email.com < /dev/null
+    $ tar zcvf LastName-LastName-p3.tar.gz LastName-LastName-p3
+    $ mutt -s "[cs1302] p3" -a LastName-LastName-p3.tar.gz -- your@email.com < /dev/null
 
 ## Questions
 
@@ -368,4 +373,15 @@ If you have any questions, please email them to Michael E. Cotterell at
     You may skip some of the steps on that website (e.g., the section on 
     downloading and installing PuTTY), however, please read all of the sections
     related to Xming as wells the sections related to configuring PuTTY.\
+
+ 3. I tried working on this project on my own computer, but the program
+    won't start. What gives?
+
+    This is probably due to fact that the <code>jfxrt.jar</code> file in the
+    project's <code>lib</code> directory is specially designed for Linux. If
+    you're working on a Mac, it may work, but it probably won't work on
+    Windows. If you have Java 7 installed on your computer, you will need to
+    replace the <code>jfxrt.jar</code> file with the one contained in your
+    JRE's lib directory. Be sure to use the one provided with this project
+    when testing and submitting your project on Nike.
 
