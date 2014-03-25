@@ -315,7 +315,9 @@ In order to clean your project (remove compiled code), use the following command
 ## Submission Instructions
 
 In addition to submitting using the <code>submit</code> command below, you will also
-need to push your final changes to your GitHub repository.
+need to push your final changes to your GitHub repository. The grader will be cloning
+your GitHub repository and testing your code that way. The submission instructions
+presented below will be used as a backup in case something goes wrong.
 
 You will still be submitting your project via <code>nike</code>. Make sure your 
 work is on <code>nike.cs.uga.edu</code> in a directory called 
