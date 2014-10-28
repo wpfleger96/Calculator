@@ -1,8 +1,8 @@
 # CSCI 1302 - Calculator Project (cs1302-calculator)
 
 Skeleton code for the Calculator project assigned to the students in Michael E. 
-Cotterell's Spring 2014 CSCI 1302 class at the University of Georgia. Please read 
-the entirety of this file before beginning your project.
+Cotterell's Fall 2014 CSCI 1302 class at the University of Georgia. **Please read 
+the entirety of this file before beginning your project.**
 
 ## Academic Honesty
 
@@ -60,7 +60,7 @@ I highly recommend that you follow the following workflow for development:
 
  * When working with your partner, work in the <code>master</code> branch.
 
- * Commit often using <code>git commit</code>.
+ * Commit often using <code>git commit -am "place log message here"</code>.
 
  * Push your branches to GitHub often using <code>git push remote origin</code>.
    You will need to follow the GitHub handout linked below in order for this
@@ -79,7 +79,7 @@ life a lot easier if you learn how to take advantage of them properly.
 
 ![Calc!](http://i.imgur.com/1K8mRIZ.png)
 
-Your goal is to develop a calculator app in Java 7 with a graphical user interface
+Your goal is to develop a calculator app in Java 7 or 8 with a graphical user interface
 (GUI) powered by JavaFX. You will be responsible for designing and implementing
 the user interface for your project (following a few guidelines). This 
 calculator app is interesting in that we will provide two different 
@@ -88,11 +88,18 @@ implementation (loops) and a recursive implementation. This will be accomplished
 implementing the <code>Math</code> interface in two classes, 
 <code>IterativeMath</code> and <code>RecursiveMath</code>.
 
+**Note:** If you choose to use Java 7 instead of Java 8, you will need to make sure
+that <code>jfxrt.jar</code> is in your class path when compiling and running your
+program. The easiest way to do this is to create a directory called <code>lib</code>
+within your project directory (same directory as SBT) and place the 
+<code>jfxrt.jar</code> there. This file is platform dependent. If you're using Java 8,
+then you don't need to worry about this.
+
 ## Project Tasks
 
 Before you submit your project, you need to perform the following tasks:
 
- 1. (2014-03-31-MON) (10 points) Implement a iterative implementation of the <code>Math</code> 
+ 1. (2014-11-04-TUE) (10 points) Implement a iterative implementation of the <code>Math</code> 
     interface in the <code>IterativeMath</code> class. The implementations for 
     **all** the methods in this class are to be non-recursive. They are to be 
     writen using iteration/loops. Just to be clear, you are NOT allowed to
@@ -112,52 +119,54 @@ Before you submit your project, you need to perform the following tasks:
     ```
     There are some more notes on implementing math functions in another
     section below. **You need to have this part committed to your git repository
-    before 2014-03-31 @ 11:55 PM** The grader will deduct 5 points if your
+    before 2014-11-04 @ 11:55 PM** The grader will deduct 5 points if your
     Git log does not reflect this upon submission.
 
- 2. (2014-03-31-MON) (10 points) Implement a recursive implementation of the <code>Math</code> 
+ 2. (2014-11-04-TUE) (10 points) Implement a recursive implementation of the <code>Math</code> 
     interface in the <code>RecursiveMath</code> class. the implementations for 
     **all** the methods in this class are to be recursive. You are not required
     to use accumulator recursion, however, doing so will make the transition
     from iteration to recursion a lot easier, especially for the math methods
     we haven't explicitly covered in class. There are some more notes on 
     implementing math functions in another section below. **You need to have 
-    this part committed to your git repository before 2014-03-31 @ 11:55 PM** 
+    this part committed to your git repository before 2014-11-04 @ 11:55 PM** 
     The grader will deduct 5 points if your Git log does not reflect this upon 
     submission.
 
- 3. (2014-04-07-MON) (20 points) Design your calculator's GUI interface. You can use 
-    a mock-up tool such as [](http://creately.com/Online-UI-Mockups-and-Wireframes) 
+ 3. (2014-11-11-TUE) (20 points) Design your calculator's GUI interface. You can use 
+    a mock-up tool such as [Creately](http://creately.com/Online-UI-Mockups-and-Wireframes) 
     or [Pencil](http://pencil.evolus.vn/) (or similar) to make this 
     easier. Your GUI should allow users to take advantage of all of the
     operators defined in the <code>Math</code> interface. You mockup and final
-    program need to contain the following elements: Text field for the mathematical 
-    expressions and the computed numbers; A button to switch between using "iteration" 
-    and "recursion"; 
-    the ability to toggle individual bits on and off, updating the UI appropriately.
+    program need to contain the following elements: 
+
+     * Text field for the mathematical expressions and the computed numbers; 
+     * A button to switch between using "iteration" and "recursion," updating the UI appropriately;
+     * The ability to toggle individual bits on and off, updating the UI appropriately.
+
     Your GUI must make use of some of the styling facilities available in JavaFX. 
     You will include your mockups in the <code>MOCKUP.md</code> file. **You need to 
-    have this part committed to your git repository before 2014-04-07 @ 11:55 PM** 
+    have this part committed to your git repository before 2014-11-11 @ 11:55 PM** 
     The grader will deduct 5 points if your Git log does not reflect this upon 
     submission.
 
- 4. (2014-04-14) (50 points) Implement a GUI interface for your calculator app
+ 4. (2014-11-18-TUE) (50 points) Implement a GUI interface for your calculator app
     using JavaFX. 
     Your GUI must include the elements you described in your mockups. 
     The skeleton code is already setup for a basic JavaFX FXML application.
     I reccommend styling your app using CSS.
     **You need to 
-    have this part committed to your git repository before 2014-04-14 @ 11:55 PM** 
+    have this part committed to your git repository before 2014-11-18 @ 11:55 PM** 
     The grader will deduct 5 points if your git log does not reflect this upon 
     submission.
 
  5. (10 points) Ensure that your code is properly documented using inline comments as 
     necessary. In general, you should describe in regular terms what it is the
     code that you are writing is doing. A small example of such comments can be
-    seen in the <code>createAndShowGUI</code> method in the <code>Calculator</code>
-    class. Please note that you do not need to write JavaDoc comments for the 
-    methods that implement methods in the <code>Math</code> interface as they 
-    will inherit the comments from the interface. However, if you create any new
+    <code>Calculator</code> class. Please note that you do not need to write 
+    JavaDoc comments for the methods that implement methods in the 
+    <code>Math</code> interface as they will inherit the comments from the 
+    interface. However, if you create any new
     methods or classes then they will need to be properly documented using
     JavaDoc comments and tags. We will be using <code>sbt doc</code> in order to
     check that you've properly written JavaDoc comments for all of your methods.
@@ -169,7 +178,8 @@ Before you submit your project, you need to perform the following tasks:
     ```markdown
     # Project Submission
 
-    Author: YOUR NAME (LAST 3 DIGITS OF 810 NUMBER HERE)
+    Author1: YOUR NAME (LAST 3 DIGITS OF 810/811 NUMBER HERE)
+    Author2: PARTNER'S NAME (LAST 3 DIGITS of 810/811)
 
     [If you did any of the exra credit then please indicate that here.]
     ```
@@ -179,7 +189,9 @@ Before you submit your project, you need to perform the following tasks:
 You may earn up to 20 points extra credit for each of the tasks listed below:
 
  1. (20 points) When the Konami code is entered (you know the code by now), 
-    a playable game of Pong pops up, implemented in JavaFX.
+    a playable game of Pong pops up, implemented in either JavaFX or Swing.
+    If you do this extra credit, please indicate that in your
+    <code>README.md</code> file.
 
 ## Note on Reverse Polish Notation (RPN)
 
@@ -321,21 +333,21 @@ presented below will be used as a backup in case something goes wrong.
 
 You will still be submitting your project via <code>nike</code>. Make sure your 
 work is on <code>nike.cs.uga.edu</code> in a directory called 
-<code>LastName-LastName-p3</code>, and, from within the parent directory, 
+<code>LastName1-LastName2-p3</code>, and, from within the parent directory, 
 execute the following command:
 
-    $ submit LastName_LastName-p3 cs1302b
+    $ submit LastName1-LastName2-p3 cs1302b
 
 It is also a good idea to email a copy to yourself. To do this, simply execute 
 the following command, replacing the email address with your email address:
 
-    $ tar zcvf LastName-LastName-p3.tar.gz LastName-LastName-p3
-    $ mutt -s "[cs1302] p3" -a LastName-LastName-p3.tar.gz -- your@email.com < /dev/null
+    $ tar zcvf LastName1-LastName2-p3.tar.gz LastName1-LastName2-p3
+    $ mutt -s "[cs1302] p3" -a LastName1-LastName2-p3.tar.gz -- your@email.com < /dev/null
 
 ## Questions
 
 If you have any questions, please email them to Michael E. Cotterell at 
-<code>mepcotterell+1302@gmail.com</code>
+<code>mepcott@uga.edu</code>
 
 ## Frequently Asked Questions
 
@@ -370,6 +382,11 @@ If you have any questions, please email them to Michael E. Cotterell at
     After following the steps on that website, try logging into nike using the 
     SSH command above.
 
+    Alternatively, you may trying logging in with unsecured X11 forwarding using the
+    following command:
+
+        $ ssh -Y username@nike.cs.uga.edu
+
     If you are connecting to <code>nike</code> using PuTTY on Windows then you 
     need to download and install Xming. For information about how to setup Xming
     with Putty, please follow the directions [here](http://blog.nth-design.com/2010/05/19/x11-putty-xming/).
@@ -380,11 +397,25 @@ If you have any questions, please email them to Michael E. Cotterell at
  3. I tried working on this project on my own computer, but the program
     won't start. What gives?
 
-    This is probably due to fact that the <code>jfxrt.jar</code> file in the
-    project's <code>lib</code> directory is specially designed for Linux. If
-    you're working on a Mac, it may work, but it probably won't work on
-    Windows. If you have Java 7 installed on your computer, you will need to
-    replace the <code>jfxrt.jar</code> file with the one contained in your
-    JRE's lib directory. Be sure to use the one provided with this project
-    when testing and submitting your project on Nike.
+    You're probably using Java 7 instead of Java 8. This problem occurs because
+    the <code>jfxrt.jar</code> file (JavaFX library) is not included in the
+    class path by default in Java 7. The easiest way to fix this problem is to
+    update to Java 8. 
+
+    If you don't want to upgrade to Java 8, then to fix this, you'll need to
+    create a <code>lib</code> directory inside of your project directory
+    (same directory as SBT) and place your <code>jfxrt.jar</code> in there.
+    Then, SBT should be able to compile and run your project. 
+
+    **NOTE:** The <code>jfxrt.jar</code> file is platform dependent. This
+    means that it's different for Mac, Linux, and Windows. To find your
+    version of the file, you will need to go into the <code>lib</code>
+    directory of your JDK or JRE installation and copy it to the <code>lib</code>
+    directory you created for your project. 
+
+    **NOTE:** If you follow the steps above to make your project work with Java 7,
+    you will need to make sure that you remove the <code>lib</code> directory
+    when compiling and running your program on Nike, since the
+    <code>jfxrt.jar</code> file you placed in the <code>lib</code> directory
+    will conflict with Java 8's version of the file.
 
