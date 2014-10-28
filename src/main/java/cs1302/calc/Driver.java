@@ -19,19 +19,21 @@ public class Driver extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-
-	Parent root = null;
-
+	
 	try {
-	    root = FXMLLoader.load(getClass().getResource("/calc.fxml"));
-	} catch (IOException e) {
+	    Parent root = FXMLLoader.load(getClass().getResource("/calc.fxml"));
+	    primaryStage.setTitle("CalcFX!");
+	    primaryStage.setScene(new Scene(root, 640, 480));
+	    primaryStage.show();
+	} catch (Exception e) {
+	    System.out.println("There was a problem while running your program.");
+	    System.out.println("Please give the following information to the developer: ");
+	    System.out.println();
 	    System.out.println(e);
+	    System.out.println();
+	    e.printStackTrace();
 	    System.exit(1);
 	} // try
-
-        primaryStage.setTitle("CalcFX!");
-	primaryStage.setScene(new Scene(root, 640, 480));
-        primaryStage.show();
 
     } // start
 
