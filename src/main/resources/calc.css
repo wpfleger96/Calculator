@@ -1,0 +1,6 @@
+
+#welcome-text {
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+    -fx-fill: red;
+}
