@@ -1,4 +1,8 @@
 
+#main-pane {
+    -fx-background-color: blue;
+}
+
 #welcome-text {
     -fx-font-size: 2em;
     -fx-font-weight: bold;
