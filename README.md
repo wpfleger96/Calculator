@@ -280,9 +280,9 @@ retrieved by cloning the repository found at <code>git://github.com/mepcotterell
 
 I've created a handout for you guys to follow that explains what you need to do
 in order to set everything up. It is available 
-[here](https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf).
+[here](https://www.dropbox.com/s/lhi0b2jufyiuyk8/GitHubStuff.pdf?dl=0).
 
---> https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf
+--> https://www.dropbox.com/s/lhi0b2jufyiuyk8/GitHubStuff.pdf?dl=0
 
 Now you are setup to work collaboratively with your teammate via GitHub.
 
