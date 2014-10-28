@@ -308,6 +308,9 @@ All of the JUnit test classes for this project should be contained in the <code>
 directory. These classes are also contained in the <code>cs1302.calc</code> 
 package so that you do not need to do any imports to test your own code.
 
+JavaFX <code>.fxml</code> and <code>.css</code> files are contained in the
+<code>src/main/resources</code> directory.
+
 ## Build System
 
 For this project, we will be using the Simple Build System (sbt). If you clone 
