@@ -1,5 +1,7 @@
 # CSCI 1302 - Calculator Project (cs1302-calculator)
 
+_This project is due Friday, 2015-04-10 @ 11:55 PM EST._
+
 Skeleton code for the Calculator project assigned to the students in Michael E. 
 Cotterell's Spring 2015 CSCI 1302 class at the University of Georgia. **Please read 
 the entirety of this file before beginning your project.**
