@@ -278,13 +278,12 @@ at the following website: https://help.github.com/articles/generating-ssh-keys#p
 The files for this project are hosted Github using <code>git</code>. They can be
 retrieved by cloning the repository found at <code>git://github.com/mepcotterell-cs1302/cs1302-calculator.git</code>. 
 
-I've created a handout for you guys to follow that explains what you need to do
-in order to set everything up. It is available 
-[here](https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf).
+You should receive an eamil that explains what you need to do
+in order to set everything up. Additionally, I've created a
+handout that describes how to use Git with this project. It is available 
+[here](https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf?dl=0).
 
---> https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf
-
-Now you are setup to work collaboratively with your teammate via GitHub.
+--> https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf?dl=0
 
 As always, I suggest developing directly on <code>nike.cs.uga.edu</code> because
 this is where your project will be run and tested. Since <code>git</code> is 
