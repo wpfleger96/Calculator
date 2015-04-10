@@ -174,12 +174,18 @@ public class ReversePolishNotation {
             } else {
 
                 // otherwise we assume it is an operand and add it to the stack
-		
                 stack.add(Integer.parseInt(postfix[i]));
 
             } // if
 
         } // for
+
+        int result = 0;
+
+        // if the stack size is not 1, then the expression is malformed
+        if (stack.size() != 1) {
+            throw new MalformedPostfixException(postfix);
+        } // if
 
         // the only element left in the stack will be the result of the evaluation
         return stack.pop();
@@ -187,3 +193,4 @@ public class ReversePolishNotation {
     } // evaluate
 
 } // ReversePolishNotation
+
