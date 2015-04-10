@@ -112,11 +112,12 @@ public class ReversePolishNotation {
      * method may return a DomainException if one of the operands for an
      * operation is not in correct number set. It may also return a NumberFormat
      *
-     * @param impl an instance of a Math implementation
-     * @param postfix the mathematical expression in postfix notation
+     * @param impl     an instance of a Math implementation
+     * @param postfix  the mathematical expression in postfix notation
      * @return the result of evaluating the expression
+     * @throws MalformedPostfixException  when the postfix expression is malformed
      */
-    public static int evaluate(Math impl, String[] postfix) throws StackOverflowError, ArithmeticException, NumberFormatException {
+    public static int evaluate(Math impl, String[] postfix) throws StackOverflowError, MalformedPostfixException {
 
         // a stack for implementing the evaluation
         Stack<Integer> stack = new Stack<Integer>();
