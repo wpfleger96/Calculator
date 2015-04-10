@@ -121,67 +121,74 @@ public class ReversePolishNotation {
         // a stack for implementing the evaluation
         Stack<Integer> stack = new Stack<Integer>();
 
-        for (int i = 0; i < postfix.length; i++) {
+        try {
+        
+            for (int i = 0; i < postfix.length; i++) {
 
-            if (postfix[i].length() == 1 && !Character.isDigit(postfix[i].charAt(0))) {
+                if (postfix[i].length() == 1 && !Character.isDigit(postfix[i].charAt(0))) {
 
-                // if the first character of the element is not a digit then we 
-                // assume it is an operator
+                    // if the first character of the element is not a digit then we 
+                    // assume it is an operator
 
-                String operator = postfix[i];
+                    String operator = postfix[i];
 		
-                if (operator.equals("<")) {
-                    int rhs = stack.pop();
-                    int lhs = stack.pop();
-                    int result = impl.lshift(lhs, rhs);
-                    stack.add(result);
-                } else if (operator.equals(">")) {
-                    int rhs = stack.pop();
-                    int lhs = stack.pop();
-                    int result = impl.rshift(lhs, rhs);
-                    stack.add(result);
-                } else if (operator.equals("+")) {
-                    int rhs = stack.pop();
-                    int lhs = stack.pop();
-                    int result = impl.add(lhs, rhs);
-                    stack.add(result);
-                } else if (operator.equals("-")) {
-                    int rhs = stack.pop();
-                    int lhs = stack.pop();
-                    int result = impl.sub(lhs, rhs);
-                    stack.add(result);
-                } else if (operator.equals("*")) {
-                    int rhs = stack.pop();
-                    int lhs = stack.pop();
-                    int result = impl.mul(lhs, rhs);
-                    stack.add(result);
-                } else if (operator.equals("/")) {
-                    int rhs = stack.pop();
-                    int lhs = stack.pop();
-                    int result = impl.div(lhs, rhs);
-                    stack.add(result);
-                } else if (operator.equals("^")) {
-                    int rhs = stack.pop();
-                    int lhs = stack.pop();
-                    int result = impl.pow(lhs, rhs);
-                    stack.add(result);
-                } else if (operator.equals("!")) {
-                    int num = stack.pop();
-                    int result = impl.fac(num);
-                    stack.add(result);
+                    if (operator.equals("<")) {
+                        int rhs = stack.pop();
+                        int lhs = stack.pop();
+                        int result = impl.lshift(lhs, rhs);
+                        stack.add(result);
+                    } else if (operator.equals(">")) {
+                        int rhs = stack.pop();
+                        int lhs = stack.pop();
+                        int result = impl.rshift(lhs, rhs);
+                        stack.add(result);
+                    } else if (operator.equals("+")) {
+                        int rhs = stack.pop();
+                        int lhs = stack.pop();
+                        int result = impl.add(lhs, rhs);
+                        stack.add(result);
+                    } else if (operator.equals("-")) {
+                        int rhs = stack.pop();
+                        int lhs = stack.pop();
+                        int result = impl.sub(lhs, rhs);
+                        stack.add(result);
+                    } else if (operator.equals("*")) {
+                        int rhs = stack.pop();
+                        int lhs = stack.pop();
+                        int result = impl.mul(lhs, rhs);
+                        stack.add(result);
+                    } else if (operator.equals("/")) {
+                        int rhs = stack.pop();
+                        int lhs = stack.pop();
+                        int result = impl.div(lhs, rhs);
+                        stack.add(result);
+                    } else if (operator.equals("^")) {
+                        int rhs = stack.pop();
+                        int lhs = stack.pop();
+                        int result = impl.pow(lhs, rhs);
+                        stack.add(result);
+                    } else if (operator.equals("!")) {
+                        int num = stack.pop();
+                        int result = impl.fac(num);
+                        stack.add(result);
+                    } // if
+
+                } else {
+
+                    // otherwise we assume it is an operand and add it to the stack
+                    stack.add(Integer.parseInt(postfix[i]));
+
                 } // if
 
-            } else {
+            } // for
 
-                // otherwise we assume it is an operand and add it to the stack
-                stack.add(Integer.parseInt(postfix[i]));
-
-            } // if
-
-        } // for
-
-        int result = 0;
-
+        } catch (Exception e) {
+            
+            // propogate as a malformed postfix exception
+            throw new MalformedPostfixException(postfix);
+            
+        } // try
+            
         // if the stack size is not 1, then the expression is malformed
         if (stack.size() != 1) {
             throw new MalformedPostfixException(postfix);
