@@ -1,5 +1,14 @@
 package cs1302.calc;
 
+/* Implement the Math interface using recursion here. For each method, replace
+ * the throw statement with your implementation.
+ */
+
+/**
+ * REPLACE ME WITH ACTUAL JAVADOC FOR THIS CLASS.
+ *
+ * @author AUTHOR
+ */
 public class RecursiveMath implements Math {
 
     public int inc(int n) {
