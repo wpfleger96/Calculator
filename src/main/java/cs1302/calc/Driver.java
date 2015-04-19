@@ -3,7 +3,10 @@ package cs1302.calc;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import static javax.swing.SwingUtilities.invokeLater;
- 
+
+/**
+ * The entry-point into the application.
+ */
 public class Driver {
 
     public static void createAndShowGUI() {
