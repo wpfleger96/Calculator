@@ -18,7 +18,7 @@ public class MathTest {
     protected Math impl = new BasicMath();
 
     @Rule
-    public Timeout globalTimeout = new Timeout(2000); 
+    public Timeout globalTimeout = new Timeout(1000); 
     
     @Test
     public void testInc() {
