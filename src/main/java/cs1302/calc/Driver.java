@@ -1,30 +1,38 @@
 package cs1302.calc;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import static javax.swing.SwingUtilities.invokeLater;
-
-/**
- * The entry-point into the application.
- */
-public class Driver {
-
-    public static void createAndShowGUI() {
-
-        // Create the frame
-        JFrame frame = new JFrame("Artsy!");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        // TODO: Create the main panel and add it to the frame
-
-        // show the window.
-        frame.pack();
-        frame.setVisible(true);
-        
-    } // createAndShowGUI
+import javafx.fxml.FXMLLoader;
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.Parent;
+import javafx.stage.Stage;
+import java.io.IOException;
+ 
+public class Driver extends Application {
 
     public static void main(String[] args) {
-        invokeLater(Driver::createAndShowGUI);
+        launch(args);
     } // main
+    
+    @Override
+    public void start(Stage primaryStage) {
+
+	Parent root = null;
+
+	try {
+	    root = FXMLLoader.load(getClass().getResource("/calc.fxml"));
+	} catch (IOException e) {
+	    System.out.println(e);
+	    System.exit(1);
+	} // try
+
+        primaryStage.setTitle("CalcFX!");
+	primaryStage.setScene(new Scene(root, 640, 480));
+        primaryStage.show();
+
+    } // start
 
 } // Driver
+
+

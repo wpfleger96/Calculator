@@ -82,7 +82,7 @@ life a lot easier if you learn how to take advantage of them properly.
 ![Calc!](http://i.imgur.com/1K8mRIZ.png)
 
 Your goal is to develop a calculator app in Java 8 with a graphical user interface
-(GUI) powered by Swing. You will be responsible for designing and implementing
+(GUI) powered by JavaFX. You will be responsible for designing and implementing
 the user interface for your project (following a few guidelines). This 
 calculator app is interesting in that we will provide two different 
 implementations for handling mathematical operations: an iterative
