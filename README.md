@@ -250,7 +250,11 @@ your code is using. In the mock-up above, the app is currently using the
 <code>IterativeMath</code> class as its' <code>Math</code> implementation. The 
 <code>^</code> button is for exponentiation and the <code>!</code> button is for 
 factorial. There are also buttons displayed for the left shift and right shift
-operators.
+operators. 
+
+The binary digits are meant to be toggled. For example, clicking on the bit in
+position 0 should change the result number to 15560. If the result number
+changes, then the corresponding binary representation should also change.
 
 ## Resources
 
