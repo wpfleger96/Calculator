@@ -345,7 +345,19 @@ If you have any questions, please email them to Michael E. Cotterell at
     This command updates the permissions on the file, making it executable for the
     current user.
 
- 2. When I execute the <code>sbt run</code> command on <code>nike</code>, I get 
+ 2. When I execute the <code>sbt run</code> command on <code>nike</code>, I get
+    the following errors:
+
+    ```
+    [error] libGL error: No matching fbConfigs or visuals found
+    [error] libGL error: failed to load driver: swrast
+    [error] Prism-ES2 Error : GL_VERSION (major.minor) = 1.4
+    ```
+
+    These are NOT errors with your program. They have to do with drivers on Nike.
+    You do NOT need to worry if you see the above errors. 
+
+ 3. When I execute the <code>sbt run</code> command on <code>nike</code>, I get 
     a <code>java.awt.HeadlessException</code> that tells me no X11 DISPLAY 
     variable was set, but this program performed an operation which requires it.
     What is going on and how do I fix it?
