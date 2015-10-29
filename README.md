@@ -319,7 +319,7 @@ work is on <code>nike.cs.uga.edu</code> in a directory called
 <code>LastName1-LastName2-p3</code>, and, from within the parent directory, 
 execute the following command:
 
-    $ submit LastName1-LastName2-p3 cs1302b
+    $ submit LastName1-LastName2-p3 cs1302a
 
 It is also a good idea to email a copy to yourself. To do this, simply execute 
 the following command, replacing the email address with your email address:
