@@ -254,7 +254,9 @@ operators.
 
 The binary digits are meant to be toggled. For example, clicking on the bit in
 position 0 should change the result number to 15560. If the result number
-changes, then the corresponding binary representation should also change.
+changes, then the corresponding binary representation should also change. If
+you are not too familiar with binary, then check out the following 
+resource: [http://michaelcotterell.com/blog/2015/4/on-bits](http://michaelcotterell.com/blog/2015/4/on-bits). 
 
 ## Resources
 
