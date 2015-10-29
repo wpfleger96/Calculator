@@ -172,7 +172,7 @@ Before you submit your project, you need to perform the following tasks:
 You may earn up to 20 points extra credit for each of the tasks listed below:
 
  1. (20 points) When the Konami code is entered (you know the code by now), 
-    a playable game of Pong pops up, implemented i Swing.
+    a playable game of Pong pops up, implemented in wither Swing or JavaFX.
     If you do this extra credit, please indicate that in your
     <code>README.md</code> file.
 
