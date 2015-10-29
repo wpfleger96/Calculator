@@ -134,13 +134,13 @@ Before you submit your project, you need to perform the following tasks:
      * A button to switch between using "iteration" and "recursion," updating the UI appropriately;
      * The ability to toggle individual bits on and off, updating the UI appropriately.
 
-    Your GUI must make use of some of the styling facilities available in Swing. 
+    Your GUI must make use of some of the styling facilities available in JavaFX. 
     You will include your mockups in the <code>MOCKUP.md</code> file. 
 
  4. (50 points) Implement a GUI interface for your calculator app
-    using Swing. 
+    using JavaFX. 
     Your GUI must include the elements you described in your mockups. 
-    The skeleton code is already setup for a basic Swing application.
+    The skeleton code is already setup for a basic JavaFX FXML application.
 
  5. (10 points) Ensure that your code is properly documented using both
     Javadoc comments and inline comments as 
