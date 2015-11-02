@@ -270,9 +270,9 @@ retrieved by cloning the repository found at <code>git://github.com/mepcotterell
 You should receive an eamil that explains what you need to do
 in order to set everything up. Additionally, I've created a
 handout that describes how to use Git with this project. It is available 
-[here](https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf?dl=0).
+[here](https://www.dropbox.com/s/hnxmwr4ww7wo4nm/GitHub.pdf?dl=0).
 
---> https://www.dropbox.com/s/26p93krfyqgm3e1/GitHubStuff.pdf?dl=0
+--> https://www.dropbox.com/s/hnxmwr4ww7wo4nm/GitHub.pdf?dl=0
 
 As always, I suggest developing directly on <code>nike.cs.uga.edu</code> because
 this is where your project will be run and tested. Since <code>git</code> is 
