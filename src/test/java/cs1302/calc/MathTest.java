@@ -26,7 +26,7 @@ public class MathTest {
             assertTrue("inc(0) != 1", impl.inc(0) == 1);
             assertTrue("inc(1) != 2", impl.inc(1) == 2);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try
     } // testInc
 
@@ -36,7 +36,7 @@ public class MathTest {
             assertTrue("dec(0) != 0", impl.dec(0) == 0);
             assertTrue("inc(1) != 0", impl.dec(1) == 0);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try
     } // testDec
 
@@ -48,7 +48,7 @@ public class MathTest {
             assertTrue("add(0, 4) != 4", impl.add(0, 4) == 4);
             assertTrue("add(4, 4) != 8", impl.add(4, 4) == 8);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try        
     } // testAdd
 
@@ -60,7 +60,7 @@ public class MathTest {
             assertTrue("sub(0, 4) != 0", impl.sub(0, 4) == 0);
             assertTrue("sub(4, 4) != 0", impl.sub(4, 4) == 0);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try        
     } // testSub
 
@@ -72,7 +72,7 @@ public class MathTest {
             assertTrue("mul(0, 2) != 0", impl.mul(0, 2) == 0);
             assertTrue("mul(2, 2) != 4", impl.mul(2, 2) == 4);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try        
     } // testMul
 
@@ -92,7 +92,7 @@ public class MathTest {
             assertTrue("div(3, 2) != 1", impl.div(3, 2) == 1);
             assertTrue("div(0, 2) != 0", impl.div(0, 2) == 0);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try        
     } // testDiv
 
@@ -104,7 +104,7 @@ public class MathTest {
             assertTrue("fac(2) != 2", impl.fac(2) == 2);
             assertTrue("fac(3) != 6", impl.fac(3) == 6);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try        
     } // testFac
 
@@ -116,7 +116,7 @@ public class MathTest {
             assertTrue("pow(2, 3) != 8",  impl.pow(2, 3) == 8);
             assertTrue("pow(2, 4) != 16", impl.pow(2, 4) == 16);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try        
     } // testPow
 
@@ -128,7 +128,7 @@ public class MathTest {
             assertTrue("lshift(1, 2) != 4",  impl.lshift(1, 2) == 4);
             assertTrue("lshift(1, 3) != 8",  impl.lshift(1, 3) == 8);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try        
     } // testLshift
 
@@ -140,7 +140,7 @@ public class MathTest {
             assertTrue("rshift(4, 2) != 1",  impl.rshift(4, 2) == 1);
             assertTrue("rshift(4, 3) != 0",  impl.rshift(4, 3) == 0);
         } catch (UnsupportedOperationException e) {
-            assertTrue("not implemented", true);
+            assertTrue("not implemented", false);
         } // try        
     } // testRshift
 
