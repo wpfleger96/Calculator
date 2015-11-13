@@ -161,8 +161,8 @@ Before you submit your project, you need to perform the following tasks:
     ```markdown
     # Project Submission
 
-    Team Member A: NAME (LAST 3 DIGITS OF 810/811 NUMBER HERE)
-    Team Member B: NAME (LAST 3 DIGITS of 810/811)
+    Team Member A: William Pfleger (Last 3 digits 283)
+    Team Member B: Jonny Do (921)
 
     [If you did any of the exra credit then please indicate that here.]
     ```
