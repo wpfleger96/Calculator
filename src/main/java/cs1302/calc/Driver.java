@@ -15,7 +15,9 @@ import javafx.beans.binding.Bindings;
 import java.io.IOException;
 import javafx.scene.layout.*; 
 
-public class Driver extends Application {
+public class Driver extends Application{
+
+    private Label argument, answer;
 
     public static void main(String[] args) {
         launch(args);
@@ -45,8 +47,8 @@ public class Driver extends Application {
 
     public VBox createScreen(){
 	VBox screen = new VBox();
-	Label argument = new Label("3+6*7");
-	Label answer = new Label("45");
+       	argument = new Label("3+6*7");
+	answer = new Label("45");
 	screen.setSpacing(10);
 	screen.getChildren().addAll(argument, answer);
 	return screen;
@@ -70,13 +72,16 @@ public class Driver extends Application {
 	HBox row3 = new HBox();
 	HBox row4 = new HBox();
 
+	// Row 1 
 	Button n7 = new Button("7");
+	n7.setOnAction(e -> argument.setText(argument.getText() + " 7"));
 	Button n8 = new Button("8");
 	Button n9 = new Button("9");
 	Button slash = new Button("/");
 	Button exclamation = new Button("!");
 	Button backspace  = new Button("<");
 	Button clear  = new Button("X");
+	// Row 2
 	Button n4 = new Button("4");
 	Button n5 = new Button("5");
 	Button n6 = new Button("6");
@@ -84,11 +89,13 @@ public class Driver extends Application {
 	Button power = new Button("^");
 	Button lshift = new Button("<<");
 	Button rshift = new Button(">>");
+	// Row 3
 	Button n1 = new Button("1");
 	Button n2 = new Button("2");
 	Button n3 = new Button("3");
 	Button subtract = new Button("-");
 	Button useRecurs = new Button("Use Recursion");
+	// Row 4
 	Button n0 = new Button("0");
 	Button equals = new Button("=");
 	Button add = new Button("+");
@@ -103,10 +110,6 @@ public class Driver extends Application {
 	return buttons;
     }
 
-
-    public void actionPerformed(ActionEvent e){
-	
-    }
 
 } // Driver
 
