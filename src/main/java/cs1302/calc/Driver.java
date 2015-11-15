@@ -15,7 +15,7 @@ import javafx.beans.binding.Bindings;
 import java.io.IOException;
 import javafx.scene.layout.*; 
 
-public class Driver extends Application {
+public class Driver extends Application implements ActionListener {
 
     public static void main(String[] args) {
         launch(args);
@@ -56,11 +56,14 @@ public class Driver extends Application {
 	VBox background = new VBox();
 	Label line1 = new Label("0000 0000 0000 0000 0000 0000 0000");
 	Label line2 = new Label("0000 0000 0000 0000 0000 0000 0000");
-	VBox buttons = new ButtonVBox();
+	VBox buttons = new VBox();
 	background.setSpacing(10);
 	background.getChildren().addAll(line1, line2, buttons);
 	return background;
 
+    }
+
+    public void actionPerformed(ActionEvent e){
     }
 
 } // Driver
