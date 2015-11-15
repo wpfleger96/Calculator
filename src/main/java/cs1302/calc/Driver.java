@@ -76,30 +76,52 @@ public class Driver extends Application{
 	Button n7 = new Button("7");
 	n7.setOnAction(e -> argument.setText(argument.getText() + " 7"));
 	Button n8 = new Button("8");
+	n8.setonAction(e -> argument.setText(argument.getText() + " 8"));
 	Button n9 = new Button("9");
+	n9.setonAction(e -> argument.setText(argument.getText() + " 9"));
 	Button slash = new Button("/");
+	slash.setonAction(e -> argument.setText(argument.getText() + " /"));
 	Button exclamation = new Button("!");
+	exclamation.setonAction(e -> argument.setText(argument.getText() + " !"));
 	Button backspace  = new Button("<");
+	backspace.setonAction(e -> argument.setText(argument.getText().substring(0,argument.getText().length()-2));
 	Button clear  = new Button("X");
+	clear.setonAction(e -> argument.setText(argument.setText(""));
 	// Row 2
 	Button n4 = new Button("4");
+	n4.setonAction(e -> argument.setText(argument.getText() + " 4"));
 	Button n5 = new Button("5");
+	n5.setonAction(e -> argument.setText(argument.getText() + " 5"));
 	Button n6 = new Button("6");
+	n6.setonAction(e -> argument.setText(argument.getText() + " 6"));
 	Button multiply = new Button("*");
+	multiply.setonAction(e -> argument.setText(argument.getText() + " *"));
 	Button power = new Button("^");
+	power.setonAction(e -> argument.setText(argument.getText() + " ^"));
 	Button lshift = new Button("<<");
+	lshift.setonAction(e -> argument.setText(argument.getText() + " <<"));
 	Button rshift = new Button(">>");
+	rshift.setonAction(e -> argument.setText(argument.getText() + " >>"));
 	// Row 3
 	Button n1 = new Button("1");
+       	n1.setonAction(e -> argument.setText(argument.getText() + " 1"));
 	Button n2 = new Button("2");
+	n2.setonAction(e -> argument.setText(argument.getText() + " 2"));
 	Button n3 = new Button("3");
+	n3.setonAction(e -> argument.setText(argument.getText() + " 3"));
 	Button subtract = new Button("-");
+	subtract.setonAction(e -> argument.setText(argument.getText() + " -"));
 	Button useRecurs = new Button("Use Recursion");
+
 	// Row 4
 	Button n0 = new Button("0");
+	n0.setonAction(e -> argument.setText(argument.getText() + " 0"));
 	Button equals = new Button("=");
+	equals.setonAction(e -> argument.setText(argument.getText() + ""));
 	Button add = new Button("+");
+	add.setonAction(e -> argument.setText(argument.getText() + " +"));
 	Button hideBin = new Button("Hide Binary");
+     
 
 	row1.getChildren().addAll(n7, n8, n9, slash, exclamation, backspace, clear);
 	row2.getChildren().addAll(n4, n5, n6, multiply, power, lshift, rshift);
