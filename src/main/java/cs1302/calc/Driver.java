@@ -56,9 +56,8 @@ public class Driver extends Application {
 	VBox background = new VBox();
 	Label line1 = new Label("0000 0000 0000 0000 0000 0000 0000");
 	Label line2 = new Label("0000 0000 0000 0000 0000 0000 0000");
-	VBox buttons = createButtons();
 	background.setSpacing(10);
-	background.getChildren().addAll(line1, line2, buttons);
+	background.getChildren().addAll(line1, line2, createButtons());
 	return background;
 
     }
