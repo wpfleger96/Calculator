@@ -15,7 +15,7 @@ import javafx.beans.binding.Bindings;
 import java.io.IOException;
 import javafx.scene.layout.*; 
 
-public class Driver extends Application implements ActionListener {
+public class Driver extends Application {
 
     public static void main(String[] args) {
         launch(args);
