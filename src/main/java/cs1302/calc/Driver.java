@@ -7,8 +7,14 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import javafx.scene.control.*;
+import javafx.geometry.Pos;
+import javafx.beans.property.*;
+import javafx.beans.binding.Bindings;
 import java.io.IOException;
- 
+import javafx.scene.layout.*; 
+
 public class Driver extends Application {
 
     public static void main(String[] args) {
@@ -28,7 +34,11 @@ public class Driver extends Application {
 	} // try
 
         primaryStage.setTitle("CalcFX!");
-	primaryStage.setScene(new Scene(root, 640, 480));
+	final TextField screen = new TextField();
+	final TilePane buttons = new TilePane();
+	final VBox layout = new VBox(100);
+	layout.getChildren().setAll(screen, buttons);
+	primaryStage.setScene(new Scene(layout, 640, 480));
         primaryStage.show();
 
     } // start
