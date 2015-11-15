@@ -34,14 +34,34 @@ public class Driver extends Application {
 	} // try
 
         primaryStage.setTitle("CalcFX!");
-	final TextField screen = new TextField();
-	final TilePane buttons = new TilePane();
-	final VBox layout = new VBox(100);
-	layout.getChildren().setAll(screen, buttons);
-	primaryStage.setScene(new Scene(layout, 640, 480));
+       	BorderPane border = new BorderPane();
+	Scene scene = new Scene(border, 500,500);
+	border.setTop(createScreen());
+	border.setCenter(createInputBox());
+	primaryStage.setScene(scene);
         primaryStage.show();
 
     } // start
+
+    public VBox createScreen(){
+	VBox screen = new VBox();
+	Label argument = new Label("3+6*7");
+	Label answer = new Label("45");
+	screen.setSpacing(10);
+	screen.getChildren().addAll(argument, answer);
+	return screen;
+    }
+    
+    public VBox createInputBox(){
+	VBox background = new VBox();
+	Label line1 = new Label("0000 0000 0000 0000 0000 0000 0000");
+	Label line2 = new Label("0000 0000 0000 0000 0000 0000 0000");
+	VBox buttons = new VBox();
+	background.setSpacing(10);
+	background.getChildren().addAll(line1, line2, buttons);
+	return background;
+
+    }
 
 } // Driver
 
