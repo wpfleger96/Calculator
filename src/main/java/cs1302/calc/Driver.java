@@ -19,6 +19,9 @@ public class Driver extends Application{
 
     private Label argument, answer;
     private boolean useRecursion=false;
+    Button toggleMath;
+    Button[] buttons1 = new Button[39];
+    Button[] buttons2 = new Button[39];
 
     public static void main(String[] args) {
         launch(args);
@@ -57,12 +60,31 @@ public class Driver extends Application{
     
     public VBox createInputBox(){
 	VBox background = new VBox();
-	Label line1 = new Label("0000 0000 0000 0000 0000 0000 0000");
-	Label line2 = new Label("0000 0000 0000 0000 0000 0000 0000");
 	background.setSpacing(10);
-	background.getChildren().addAll(line1, line2, createButtons());
+	background.getChildren().addAll(createBits(), createButtons());
 	return background;
 
+    }
+
+    public HBox createBits(){
+       	for(i=0; i<40; i++){
+	    buttons1[i].setLabel("0");
+	    buttons1[i].setOnAction(e -> screen.setText(updateScreen(i, buttons1[i].getText())));
+	    
+	}
+    }
+
+    public String updateScreen(int i, String state){
+	int newVal=screen.getText();
+	if(state.equals("0")){
+	    newVal+=Math.pow(2,i);
+	    buttons1[i].setLabel("1");
+	}
+	else{
+	    newVal-=Math.pow(2,i);
+	    buttons1[i].setLabel("0");
+	}
+	return newVal;
     }
 
     public VBox createButtons(){
@@ -112,7 +134,7 @@ public class Driver extends Application{
 	n3.setOnAction(e -> argument.setText(argument.getText() + " 3"));
 	Button subtract = new Button("-");
 	subtract.setOnAction(e -> argument.setText(argument.getText() + " -"));
-	Button toggleMath = new Button("Use Recursion");
+	toggleMath = new Button("Use Recursion");
         toggleMath.setOnAction(e -> toggleMathAlgorithm());
 
 	// Row 4
@@ -135,11 +157,27 @@ public class Driver extends Application{
     }
 			      
     public void toggleMathAlgorithm(){
+	if(useRecursion){
+	    toggleMath.setText("Use Iteration");
+	    useRecursion=false;
+	}
+	else{
+	    toggleMath.setText("Use Recursion");
+	    useRecursion=true;
+	}
+
     }
  
     public String evaluate(String s){
 	String expression = s;
+	expression=expression.trim();
+	expression=expression.replaceAll(">>", ">");
+	expression=expression.replaceAll("<<", "<");
 	String infix[] = expression.split(" ");
+	System.out.print("INFIX: ");
+	for(int i=0; i<infix.length; i++){
+	    System.out.print(infix[i] + " ");
+	}
 	String postfix[] = ReversePolishNotation.infixToPostfix(infix);
 	Math math;
 	if(useRecursion){
