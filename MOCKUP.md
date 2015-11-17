@@ -21,7 +21,7 @@ or Vi.
 
 You can include your image, as follows:
 
-![GUI Mockup 1](http://i.imgur.com/X5SZDg0.png)
+![GUI Mockup 1](http://i.imgur.com/ZX786E2.png)
 
 You can type a description of the mockup here. Include any information about
 additional features you have mocked up in your interface.
