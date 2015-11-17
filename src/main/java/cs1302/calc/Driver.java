@@ -21,9 +21,7 @@ public class Driver extends Application{
     private boolean useRecursion=false;
     Button toggleMath;
     VBox screen;
-    Button[] buttons1 = new Button[39];
-    Button[] buttons2 = new Button[39];
-
+    
     public static void main(String[] args) {
         launch(args);
     } // main
@@ -61,23 +59,27 @@ public class Driver extends Application{
     
     public VBox createInputBox(){
 	VBox background = new VBox();
-	background.setSpacing(10);
-	background.getChildren().addAll(new HBox(), createButtons());
+	background.setSpacing(100);
+	BitButtons[] line1 = new BitButtons[32];
+	BitButtons[] line2 = new BitButtons[32];
+	background.getChildren().addAll(line1, line2,  createButtons());
 	return background;
 
     }
-    
-    public HBox createBits(){
-	HBox bits = new HBox();
-       	for(int i=0; i<39; i++){
-	    buttons1[i].setText("0");
-	    int current=i;
-	    //buttons1[i].setOnAction(e -> answer.setText(updateScreen(current, buttons1[current].getText())));
-	    
-	}
-	return bits;
-    }
 
+    class BitButtons extends Button{
+	static int count=0;
+	boolean active=false;
+	int pos;
+	public BitButtons(){
+	    this.pos=count;
+	    super(Integer.toString(this.pos));
+	    count++;
+	}
+    }
+   
+
+ 
     public String updateScreen(int i, String state){
 	int newVal=Integer.parseInt(answer.getText());
 	if(state.equals("0")){
