@@ -62,7 +62,7 @@ public class Driver extends Application{
     public VBox createInputBox(){
 	VBox background = new VBox();
 	background.setSpacing(10);
-	background.getChildren().addAll(createBits(), createButtons());
+	background.getChildren().addAll(new HBox(), createButtons());
 	return background;
 
     }
@@ -72,7 +72,7 @@ public class Driver extends Application{
        	for(int i=0; i<39; i++){
 	    buttons1[i].setText("0");
 	    int current=i;
-	    buttons1[i].setOnAction(e -> answer.setText(updateScreen(current, buttons1[current].getText())));
+	    //buttons1[i].setOnAction(e -> answer.setText(updateScreen(current, buttons1[current].getText())));
 	    
 	}
 	return bits;
@@ -178,7 +178,6 @@ public class Driver extends Application{
 	expression=expression.replaceAll(">>", ">");
 	expression=expression.replaceAll("<<", "<");
 	String infix[] = expression.split(" ");
-	System.out.print("INFIX: ");
 	for(int i=0; i<infix.length; i++){
 	    System.out.print(infix[i] + " ");
 	}
