@@ -20,6 +20,7 @@ public class Driver extends Application{
     private Label argument, answer;
     private boolean useRecursion=false;
     Button toggleMath;
+    VBox screen;
     Button[] buttons1 = new Button[39];
     Button[] buttons2 = new Button[39];
 
@@ -50,7 +51,7 @@ public class Driver extends Application{
     } // start
 
     public VBox createScreen(){
-	VBox screen = new VBox();
+        screen = new VBox();
        	argument = new Label("3+6*7");
 	answer = new Label("45");
 	screen.setSpacing(10);
@@ -70,20 +71,20 @@ public class Driver extends Application{
 	HBox bits = new HBox();
        	for(int i=0; i<39; i++){
 	    buttons1[i].setText("0");
-	    buttons1[i].setOnAction(e -> screen.setText(updateScreen(i, buttons1[i].getText())));
+	    buttons1[i].setOnAction(e -> answer.setText(updateScreen(i, buttons1[i].getText())));
 	    
 	}
 	return bits;
     }
 
     public String updateScreen(int i, String state){
-	int newVal=screen.getText();
+	int newVal=Integer.parseInt(answer.getText());
 	if(state.equals("0")){
-	    newVal+=Math.pow(2,i);
+	    newVal = newVal + Math.pow(2,i);
 	    buttons1[i].setText("1");
 	}
 	else{
-	    newVal-=Math.pow(2,i);
+	    newVal = newVal - Math.pow(2,i);
 	    buttons1[i].setText("0");
 	}
 	return "" + newVal;
