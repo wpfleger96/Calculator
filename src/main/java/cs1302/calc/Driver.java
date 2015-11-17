@@ -65,27 +65,29 @@ public class Driver extends Application{
 	return background;
 
     }
-
+    
     public HBox createBits(){
-       	for(i=0; i<40; i++){
-	    buttons1[i].setLabel("0");
+	HBox bits = new HBox();
+       	for(int i=0; i<39; i++){
+	    buttons1[i].setText("0");
 	    buttons1[i].setOnAction(e -> screen.setText(updateScreen(i, buttons1[i].getText())));
 	    
 	}
+	return bits;
     }
 
     public String updateScreen(int i, String state){
 	int newVal=screen.getText();
 	if(state.equals("0")){
 	    newVal+=Math.pow(2,i);
-	    buttons1[i].setLabel("1");
+	    buttons1[i].setText("1");
 	}
 	else{
 	    newVal-=Math.pow(2,i);
-	    buttons1[i].setLabel("0");
+	    buttons1[i].setText("0");
 	}
-	return newVal;
-    }
+	return "" + newVal;
+	}
 
     public VBox createButtons(){
 
