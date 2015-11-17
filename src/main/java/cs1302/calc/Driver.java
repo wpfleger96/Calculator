@@ -71,7 +71,8 @@ public class Driver extends Application{
 	HBox bits = new HBox();
        	for(int i=0; i<39; i++){
 	    buttons1[i].setText("0");
-	    buttons1[i].setOnAction(e -> answer.setText(updateScreen(i, buttons1[i].getText())));
+	    int current=i;
+	    buttons1[i].setOnAction(e -> answer.setText(updateScreen(current, buttons1[current].getText())));
 	    
 	}
 	return bits;
@@ -80,11 +81,11 @@ public class Driver extends Application{
     public String updateScreen(int i, String state){
 	int newVal=Integer.parseInt(answer.getText());
 	if(state.equals("0")){
-	    newVal = newVal + Math.pow(2,i);
+	    newVal += (int)java.lang.Math.pow(2,i);
 	    buttons1[i].setText("1");
 	}
 	else{
-	    newVal = newVal - Math.pow(2,i);
+	    newVal -= (int)java.lang.Math.pow(2,i);
 	    buttons1[i].setText("0");
 	}
 	return "" + newVal;
