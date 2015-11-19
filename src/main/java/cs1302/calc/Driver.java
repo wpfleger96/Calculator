@@ -19,10 +19,10 @@ public class Driver extends Application{
 
     private Label argument, answer;
     private boolean useRecursion=false;
-    Button toggleMath;
+    Button toggleMath, hideBin;
     VBox screen;
     Button[] buttons1 = new Button[64];
-    Button[] buttons2 = new Button[39];
+    FlowPane flow;
     
     public static void main(String[] args) {
         launch(args);
@@ -67,10 +67,11 @@ public class Driver extends Application{
     }
 
     public FlowPane createBits(){
-	FlowPane flow = new FlowPane();
+        flow = new FlowPane();
+	flow.setPrefWrapLength(1000);
         //HBox bits = new HBox();
         for(int i=0; i<64; i++){
-	    int val=64-i;
+	    int val=63-i;
             buttons1[i] = new Button();
             buttons1[i].setText("0");
 	    int current = i;
@@ -157,7 +158,8 @@ public class Driver extends Application{
         equals.setOnAction(e -> answer.setText(evaluate(argument.getText())));
         Button add = new Button("+");
         add.setOnAction(e -> argument.setText(argument.getText() + " +"));
-        Button hideBin = new Button("Hide Binary");
+        hideBin = new Button("Hide Binary");
+	hideBin.setOnAction(e -> changeVisibility());
 
 
         row1.getChildren().addAll(n7, n8, n9, slash, exclamation, backspace, clear);
@@ -167,6 +169,17 @@ public class Driver extends Application{
         buttons.getChildren().addAll(row1, row2, row3, row4);
 
         return buttons;
+    }
+
+    public void changeVisibility(){
+	if(flow.isVisible()){
+	    flow.setVisible(false);
+	    hideBin.setText("Show Binary");
+	}
+	else{
+	    flow.setVisible(true);
+	    hideBin.setText("Hide Binary");
+	}
     }
 
     public void toggleMathAlgorithm(){
