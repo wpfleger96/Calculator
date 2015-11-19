@@ -73,7 +73,8 @@ public class Driver extends Application{
         for(int i=0; i<64; i++){
 	    int val=63-i;
             buttons1[i] = new Button();
-            buttons1[i].setText("0");
+	    buttons1[i].setStyle("-fx-background-color: transparent;");
+	    buttons1[i].setText("0");
 	    int current = i;
             buttons1[i].setOnAction(e -> answer.setText(updateScreen(val, buttons1[current].getText())));
          }
