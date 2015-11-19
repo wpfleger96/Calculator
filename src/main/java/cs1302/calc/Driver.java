@@ -70,10 +70,11 @@ public class Driver extends Application{
     public HBox createBits(){
 	HBox bits = new HBox();
        	for(int i=0; i<39; i++){
+	    buttons1[i] = new Button();
 	    buttons1[i].setText("0");
 	    int current=i;
 	    buttons1[i].setOnAction(e -> answer.setText(updateScreen(current, buttons1[current].getText())));
-	    
+	    bits.getChildren().addAll(buttons1[i]);
 	}
 	return bits;
     }
