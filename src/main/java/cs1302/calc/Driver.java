@@ -38,7 +38,7 @@ public class Driver extends Application{
         } catch (IOException e) {
             System.out.println(e);
             System.exit(1);
-        } // try                                                                                                                                                                     
+        } // try                                                                                                                                                                
 
         primaryStage.setTitle("CalcFX!");
         BorderPane border = new BorderPane();
@@ -66,33 +66,35 @@ public class Driver extends Application{
         return background;
     }
 
-    public HBox createBits(){
-        HBox bits = new HBox();
+    public FlowPane createBits(){
+	FlowPane flow = new FlowPane();
+        //HBox bits = new HBox();
         for(int i=0; i<39; i++){
+	    int val=38-i;
             buttons1[i] = new Button();
             buttons1[i].setText("0");
-            int current=i;
-            buttons1[i].setOnAction(e -> answer.setText(updateScreen(current, buttons1[current].getText())));
-        }
+            buttons1[i].setOnAction(e -> answer.setText(updateScreen(val, buttons1[val].getText())));
+         }
 
 	for(int f=0; f<19; f++){
-            bits.getChildren().addAll(buttons1[f]);
+            flow.getChildren().add(buttons1[f]);
         }
         for(int s=19; s<39; s++){
-            bits.getChildren().addAll(buttons1[s]);
+            flow.getChildren().add(buttons1[s]);
         }
-        return bits;
+        //return bits;
+	return flow;
     }
 
     public String updateScreen(int i, String state){
         int newVal=Integer.parseInt(answer.getText());
         if(state.equals("0")){
             newVal += (int)java.lang.Math.pow(2,i);
-            buttons1[i].setText("1");
+            buttons1[38-i].setText("1");
         }
         else{
             newVal -= (int)java.lang.Math.pow(2,i);
-            buttons1[i].setText("0");
+            buttons1[38-i].setText("0");
         }
         return "" + newVal;
     }
