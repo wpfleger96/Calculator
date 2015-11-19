@@ -89,13 +89,13 @@ public class Driver extends Application{
 
     public String updateScreen(int i, String state){
         int newVal=Integer.parseInt(answer.getText());
-        if(state.equals("0")){
+	if(state.equals("0")){
             newVal += (int)java.lang.Math.pow(2,i);
-            buttons1[64-i].setText("1");
+            buttons1[63-i].setText("1");
         }
         else{
             newVal -= (int)java.lang.Math.pow(2,i);
-            buttons1[64-i].setText("0");
+            buttons1[63-i].setText("0");
         }
         return "" + newVal;
     }
