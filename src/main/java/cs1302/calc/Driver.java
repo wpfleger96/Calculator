@@ -1,3 +1,5 @@
+//TEST
+
 package cs1302.calc;
 
 import javafx.fxml.FXMLLoader;
@@ -42,7 +44,7 @@ public class Driver extends Application{
 
         primaryStage.setTitle("CalcFX!");
         BorderPane border = new BorderPane();
-        Scene scene = new Scene(border, 500,500);
+        Scene scene = new Scene(border, 880,500);
         border.setTop(createScreen());
         border.setCenter(createInputBox());
         primaryStage.setScene(scene);
