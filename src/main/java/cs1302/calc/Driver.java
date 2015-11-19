@@ -1,5 +1,3 @@
-//TEST
-
 package cs1302.calc;
 
 import javafx.fxml.FXMLLoader;
