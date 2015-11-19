@@ -64,7 +64,6 @@ public class Driver extends Application{
 	BitButtons[] line2 = new BitButtons[32];
 	background.getChildren().addAll(line1, line2,  createButtons());
 	return background;
-
     }
 
     class BitButtons extends Button{
@@ -77,6 +76,24 @@ public class Driver extends Application{
 	    count++;
 	}
     }
+    
+    public HBox createBits(){
+	HBox bits = new HBox();
+	Button[] buttons;
+       	for(int i=0; i<39; i++){
+	    buttons[i] = new Button();
+	    buttons[i].setText("0");
+	    int current=i;
+	    buttons[i].setOnAction(e -> answer.setText(updateScreen(current, buttons[current].getText())));
+	}
+
+	for(int f=0; f<19; f++){
+	    bits.getChildren().addAll(buttons[f]);
+	}
+	for(int s=19; s<39; s++){
+	    bits.getChildren().addAll(buttons[s]);
+	}
+    }
    
 
  
@@ -84,11 +101,11 @@ public class Driver extends Application{
 	int newVal=Integer.parseInt(answer.getText());
 	if(state.equals("0")){
 	    newVal += (int)java.lang.Math.pow(2,i);
-	    buttons1[i].setText("1");
+	    buttons[i].setText("1");
 	}
 	else{
 	    newVal -= (int)java.lang.Math.pow(2,i);
-	    buttons1[i].setText("0");
+	    buttons[i].setText("0");
 	}
 	return "" + newVal;
 	}
