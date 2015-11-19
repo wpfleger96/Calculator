@@ -64,7 +64,6 @@ public class Driver extends Application{
 	background.setSpacing(10);
 	background.getChildren().addAll(createBits(), createButtons());
 	return background;
-
     }
     
     public HBox createBits(){
@@ -74,7 +73,13 @@ public class Driver extends Application{
 	    buttons1[i].setText("0");
 	    int current=i;
 	    buttons1[i].setOnAction(e -> answer.setText(updateScreen(current, buttons1[current].getText())));
-	    bits.getChildren().addAll(buttons1[i]);
+	}
+
+	for(int f=0; f<19; f++){
+	    bits.getChildren().addAll(buttons1[f]);
+	}
+	for(int s=19; s<39; s++){
+	    bits.getChildren().addAll(buttons1[s]);
 	}
 	return bits;
     }
