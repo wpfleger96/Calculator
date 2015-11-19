@@ -1,0 +1,1 @@
+javac -d /home/ugrads/pfleger/~./ssh/Do-Pfleger-p3/target/scala-2.10/classes -classpath /home/ugrads/pfleger/~./ssh/Do-Pfleger-p3/target/scala-2.10/classes:/home/ugrads/pfleger/.sbt/boot/scala-2.10.4/lib/scala-library.jar /home/ugrads/pfleger/~./ssh/Do-Pfleger-p3/src/main/java/cs1302/calc/Driver.java
