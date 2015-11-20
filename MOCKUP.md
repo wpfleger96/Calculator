@@ -23,16 +23,15 @@ You can include your image, as follows:
 
 ![GUI Mockup 1](http://i.imgur.com/ZX786E2.png)
 
-You can type a description of the mockup here. Include any information about
-additional features you have mocked up in your interface.
+This calculator design is simple. It has colored buttons for equals, backspace, clear, use recursion, and hide binary buttons. We used setPadding to align the bottom buttons.
 
 ## GUI with Bit Toggle
 
 Here is another image...
 
-![GUI Mockup 2](http://i.imgur.com/nf6LRol.png)
+![GUI Mockup 2](http://i.imgur.com/lp7ew4B.png)
 
-This mockup includes the binary bit toggle. I designed this way because...
+This shows the calculator "Hide Binary" button in action, hiding the binary.
 
 ## Additional Interface Elements
 

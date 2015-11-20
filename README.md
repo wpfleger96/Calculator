@@ -1,3 +1,8 @@
+# Project Submission
+
+Team Member A: Tung Do (921)
+Team Member B: Will Pfleger (283)
+
 # CSCI 1302 - Calculator Project (cs1302-calculator)
 
 _This project is due Friday, 2015-11-20 @ 11:55 PM EST._
