@@ -176,6 +176,7 @@ public class Driver extends Application{
         exclamation.setOnAction(e -> argument.setText(argument.getText() + " !"));
         Button backspace  = new Button("<");
 	backspace.setPadding(new Insets(10,17,10,16));
+	backspace.setStyle("-fx-background-color: #FFCC00");
 	backspace.setOnAction(new EventHandler<ActionEvent>(){
 		@Override
 		public void handle(ActionEvent event){
@@ -190,6 +191,7 @@ public class Driver extends Application{
 
         Button clear  = new Button("X");
 	clear.setPadding(new Insets(10,18,10,17));
+	clear.setStyle("-fx-background-color: #FFCC00");
         clear.setOnAction(e -> argument.setText(""));
         // Row 2                                                                                                                                                                     
         Button n4 = new Button("4");
@@ -228,6 +230,7 @@ public class Driver extends Application{
         subtract.setOnAction(e -> argument.setText(argument.getText() + " -"));
         toggleMath = new Button("Use Recursion");
 	toggleMath.setPadding(new Insets(10,20,10,20));
+	toggleMath.setStyle("-fx-background-color: #6699FF");
         toggleMath.setOnAction(e -> toggleMathAlgorithm());
 
         // Row 4                                                                                                                                                                     
@@ -236,12 +239,14 @@ public class Driver extends Application{
         n0.setOnAction(e -> argument.setText(argument.getText() + " 0"));
         Button equals = new Button("=");
         equals.setPadding(new Insets(10,43,10,43));
+	equals.setStyle("-fx-background-color: #339900");
 	equals.setOnAction(e -> answer.setText(evaluate(argument.getText())));
         Button add = new Button("+");
 	add.setPadding(new Insets(10,17,10,18));
         add.setOnAction(e -> argument.setText(argument.getText() + " +"));
         hideBin = new Button("Hide Binary");
 	hideBin.setPadding(new Insets(10,29,10,28));
+	hideBin.setStyle("-fx-background-color: #6699FF");
 	hideBin.setOnAction(e -> changeVisibility());
 
 
