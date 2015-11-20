@@ -316,9 +316,6 @@ public class Driver extends Application{
         expression=expression.replaceAll(">>", ">");
         expression=expression.replaceAll("<<", "<");
         String infix[] = expression.split(" ");
-        for(int i=0; i<infix.length; i++){
-	    System.out.print(infix[i] + " ");
-        }
         String postfix[] = ReversePolishNotation.infixToPostfix(infix);
 	Math math;
         if(useRecursion){
