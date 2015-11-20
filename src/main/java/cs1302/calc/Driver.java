@@ -16,8 +16,16 @@ import java.io.IOException;
 import javafx.scene.layout.*;
 import javafx.geometry.Insets;
 
+/**
+  Driver.java extends Application, builds the GUI for the calculator, and is the entry point into the program
+  @author Will Pfleger, Johnny Do
+**/
+
 public class Driver extends Application{
 
+    /**
+       Declaration of instance variables
+    **/
     private Label argument, answer;
     private boolean useRecursion=false;
     Button toggleMath, hideBin;
@@ -28,7 +36,11 @@ public class Driver extends Application{
     public static void main(String[] args) {
         launch(args);
     } // main                                                                                                                                                                        
-
+    /**
+       Builds the GUI for the application 
+       @param primaryStage the primary stage for the GUI 
+       @return void
+     **/
     @Override
 	public void start(Stage primaryStage) {
 
@@ -53,6 +65,12 @@ public class Driver extends Application{
 
     } // start 
 
+    /**
+       Creates the GUI "screen" for the calculator. Will display the arguments and results from calculator operations 
+       @param none
+       @return the VBox that will be the screen in the application 
+     **/
+    
     public VBox createScreen(){
         screen = new VBox();
         argument = new Label("");
@@ -63,6 +81,12 @@ public class Driver extends Application{
         return screen;
     }
 
+    /**
+       Creates the input portion of the calculator, consisting of the bit toggle buttons and the calculator operation button  
+       @param none
+       @return1the VBox that will be the input area in the application 
+     **/
+
     public VBox createInputBox(){
         VBox background = new VBox();
         background.setSpacing(10);
@@ -70,34 +94,42 @@ public class Driver extends Application{
         return background;
     }
 
+    /**
+       Creates the set of bit toggle buttons 
+       @param none
+       @return the pane containing the buttons 
+     **/
+
     public FlowPane createBits(){
         flow = new FlowPane();
-	flow.setPrefWrapLength(1000);
-        //HBox bits = new HBox();
         for(int i=0; i<64; i++){
 	    int val=63-i;
             buttons1[i] = new Button("0");
 	    buttons1[i].setStyle("-fx-background-color: transparent;");
 	    buttons1[i].setPadding(new Insets(0));
-	    //buttons1[i].setText("0");
 	    int current = i;
             buttons1[i].setOnAction(e -> answer.setText(updateScreen(val, buttons1[current].getText())));
-         }
-	
+	}
+
 	Button space = new Button();
 	space.setStyle("-fx-background-color: transparent;");
 	for(int f=0; f<32; f++){
             flow.getChildren().add(buttons1[f]);
-	    //if(f % 4 == 0){
-	    //	flow.getChildren(space);
-	    //}
+	    // if(f % 4 == 0){
+	    // flow.getChildren().add(space);
+	    // }
 	}
         for(int s=32; s<64; s++){
             flow.getChildren().add(buttons1[s]);
         }
-        //return bits;
 	return flow;
     }
+
+    /**
+       Updates the value on the screen after bit toggle buttons are pressed 
+       @param i the position of the bit being toggled, state the current state (pressed or not) of the button
+       @return the updated value to be displayed on the calculator screen 
+     **/
 
     public String updateScreen(int i, String state){
         int newVal=Integer.parseInt(answer.getText());
@@ -111,6 +143,12 @@ public class Driver extends Application{
         }
         return "" + newVal;
     }
+
+    /**
+       Creates the buttons for the numbers, calculator operations, and toggles for binary visiblity and math algorithm  
+       @param none
+       @return the VBox containing the buttons 
+     **/
 
     public VBox createButtons(){
 
@@ -146,9 +184,6 @@ public class Driver extends Application{
 		    }
 		    else if (argument.getText().length() == 1){
 			argument.setText(argument.getText().substring(0,argument.getText().length()-1));
-		    }
-		    else{
-			// Do nothing
 		    }
 		}
 	    });
@@ -219,6 +254,12 @@ public class Driver extends Application{
         return buttons;
     }
 
+    /**
+       Changes the visiblity of the bit toggle buttons 
+       @param none
+       @return void 
+     **/
+
     public void changeVisibility(){
 	if(flow.isVisible()){
 	    flow.setVisible(false);
@@ -229,6 +270,12 @@ public class Driver extends Application{
 	    hideBin.setText("Hide Binary");
 	}
     }
+
+    /**
+       Toggles the current math algorithm the calculator is using  
+       @param none
+       @return void 
+     **/
 
     public void toggleMathAlgorithm(){
 	if(useRecursion){
@@ -241,6 +288,12 @@ public class Driver extends Application{
         }
 
     }
+
+    /**
+       Evaluates the argument on the calculator screen
+       @param s the current argument
+       @return the result of the evaluation 
+     **/
 
     public String evaluate(String s){
         String expression = s;
