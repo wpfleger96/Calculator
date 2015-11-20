@@ -100,8 +100,9 @@ public class Driver extends Application{
      **/
 
     public FlowPane createBits(){
-        flow = new FlowPane();
-	flow.setPrefWrapLength(1000);
+        flow = new FlowPane(1,1);
+	flow.setPrefWrapLength(200);
+	flow.setHgap(0);
         for(int i=0; i<64; i++){
 	    int val=63-i;
             buttons1[i] = new Button("0");
@@ -109,8 +110,8 @@ public class Driver extends Application{
 	    buttons1[i].setPadding(new Insets(0));
 	    int current = i;
             buttons1[i].setOnAction(e -> answer.setText(updateScreen(val, buttons1[current].getText())));
-         }
-	
+	}
+
 	Button space = new Button();
 	space.setStyle("-fx-background-color: transparent;");
 	for(int f=0; f<32; f++){
