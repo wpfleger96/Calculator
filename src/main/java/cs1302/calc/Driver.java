@@ -14,6 +14,7 @@ import javafx.beans.property.*;
 import javafx.beans.binding.Bindings;
 import java.io.IOException;
 import javafx.scene.layout.*;
+import javafx.geometry.Insets;
 
 public class Driver extends Application{
 
@@ -45,6 +46,8 @@ public class Driver extends Application{
         Scene scene = new Scene(border, 500,500);
         border.setTop(createScreen());
         border.setCenter(createInputBox());
+	primaryStage.setWidth(400);
+	primaryStage.setHeight(200);
         primaryStage.setScene(scene);
         primaryStage.show();
 
@@ -54,7 +57,7 @@ public class Driver extends Application{
         screen = new VBox();
         argument = new Label("3+6*7");
         answer = new Label("45");
-        screen.setSpacing(10);
+	screen.setSpacing(10);
         screen.getChildren().addAll(argument, answer);
         return screen;
     }
@@ -62,7 +65,7 @@ public class Driver extends Application{
     public VBox createInputBox(){
         VBox background = new VBox();
         background.setSpacing(10);
-        background.getChildren().addAll(createBits(), createButtons());
+	background.getChildren().addAll(createBits(), createButtons());
         return background;
     }
 
@@ -72,16 +75,22 @@ public class Driver extends Application{
         //HBox bits = new HBox();
         for(int i=0; i<64; i++){
 	    int val=63-i;
-            buttons1[i] = new Button();
+            buttons1[i] = new Button("0");
 	    buttons1[i].setStyle("-fx-background-color: transparent;");
-	    buttons1[i].setText("0");
+	    buttons1[i].setPadding(new Insets(0));
+	    //buttons1[i].setText("0");
 	    int current = i;
             buttons1[i].setOnAction(e -> answer.setText(updateScreen(val, buttons1[current].getText())));
          }
-
+	
+	Button space = new Button();
+	space.setStyle("-fx-background-color: transparent;");
 	for(int f=0; f<32; f++){
             flow.getChildren().add(buttons1[f]);
-        }
+	    //if(f % 4 == 0){
+	    //	flow.getChildren(space);
+	    //}
+	}
         for(int s=32; s<64; s++){
             flow.getChildren().add(buttons1[s]);
         }
@@ -112,7 +121,7 @@ public class Driver extends Application{
 
         // Row 1                                                                                                                                                                     
         Button n7 = new Button("7");
-        n7.setOnAction(e -> argument.setText(argument.getText() + " 7"));
+	n7.setOnAction(e -> argument.setText(argument.getText() + " 7"));
         Button n8 = new Button("8");
         n8.setOnAction(e -> argument.setText(argument.getText() + " 8"));
         Button n9 = new Button("9");
@@ -122,7 +131,22 @@ public class Driver extends Application{
         Button exclamation = new Button("!");
         exclamation.setOnAction(e -> argument.setText(argument.getText() + " !"));
         Button backspace  = new Button("<");
-        backspace.setOnAction(e -> argument.setText(argument.getText().substring(0,argument.getText().length()-2)));
+        //backspace.setOnAction(e -> argument.setText(argument.getText().substring(0,argument.getText().length()-2)));
+	backspace.setOnAction(new EventHandler<ActionEvent>(){
+		@Override
+		public void handle(ActionEvent event){
+		    if(argument.getText().length() > 1){
+			argument.setText(argument.getText().substring(0,argument.getText().length()-2));
+		    }
+		    else if (argument.getText().length() == 1){
+			argument.setText(argument.getText().substring(0,argument.getText().length()-1));
+		    }
+		    else{
+			// Do nothing
+		    }
+		}
+	    });
+
         Button clear  = new Button("X");
         clear.setOnAction(e -> argument.setText(""));
         // Row 2                                                                                                                                                                     
@@ -220,4 +244,4 @@ public class Driver extends Application{
     }
 
 
-} // Driver  
+} // Driver
