@@ -47,7 +47,7 @@ public class Driver extends Application{
         border.setTop(createScreen());
         border.setCenter(createInputBox());
 	primaryStage.setWidth(400);
-	primaryStage.setHeight(200);
+	primaryStage.setHeight(250);
         primaryStage.setScene(scene);
         primaryStage.show();
 
@@ -55,8 +55,9 @@ public class Driver extends Application{
 
     public VBox createScreen(){
         screen = new VBox();
-        argument = new Label("3+6*7");
-        answer = new Label("45");
+        argument = new Label("");
+	//argument.setFont(new Font("Arial",30));
+        answer = new Label("");
 	screen.setSpacing(10);
         screen.getChildren().addAll(argument, answer);
         return screen;
@@ -121,17 +122,22 @@ public class Driver extends Application{
 
         // Row 1                                                                                                                                                                     
         Button n7 = new Button("7");
+	n7.setPadding(new Insets(10,20,10,20));
 	n7.setOnAction(e -> argument.setText(argument.getText() + " 7"));
         Button n8 = new Button("8");
+	n8.setPadding(new Insets(10,20,10,20));
         n8.setOnAction(e -> argument.setText(argument.getText() + " 8"));
         Button n9 = new Button("9");
+	n9.setPadding(new Insets(10,20,10,20));
         n9.setOnAction(e -> argument.setText(argument.getText() + " 9"));
         Button slash = new Button("/");
+	slash.setPadding(new Insets(10,20,10,20));
         slash.setOnAction(e -> argument.setText(argument.getText() + " /"));
         Button exclamation = new Button("!");
+	exclamation.setPadding(new Insets(10,20,10,19));
         exclamation.setOnAction(e -> argument.setText(argument.getText() + " !"));
         Button backspace  = new Button("<");
-        //backspace.setOnAction(e -> argument.setText(argument.getText().substring(0,argument.getText().length()-2)));
+	backspace.setPadding(new Insets(10,17,10,16));
 	backspace.setOnAction(new EventHandler<ActionEvent>(){
 		@Override
 		public void handle(ActionEvent event){
@@ -148,42 +154,59 @@ public class Driver extends Application{
 	    });
 
         Button clear  = new Button("X");
+	clear.setPadding(new Insets(10,18,10,17));
         clear.setOnAction(e -> argument.setText(""));
         // Row 2                                                                                                                                                                     
         Button n4 = new Button("4");
+	n4.setPadding(new Insets(10,20,10,20));
         n4.setOnAction(e -> argument.setText(argument.getText() + " 4"));
         Button n5 = new Button("5");
+	n5.setPadding(new Insets(10,20,10,20));
         n5.setOnAction(e -> argument.setText(argument.getText() + " 5"));
         Button n6 = new Button("6");
+	n6.setPadding(new Insets(10,20,10,20));
         n6.setOnAction(e -> argument.setText(argument.getText() + " 6"));
         Button multiply = new Button("*");
+	multiply.setPadding(new Insets(10,18,10,20));
         multiply.setOnAction(e -> argument.setText(argument.getText() + " *"));
         Button power = new Button("^");
+	power.setPadding(new Insets(10,17,10,17));
         power.setOnAction(e -> argument.setText(argument.getText() + " ^"));
         Button lshift = new Button("<<");
+	lshift.setPadding(new Insets(10,11,10,11));
 	lshift.setOnAction(e -> argument.setText(argument.getText() + " <<"));
         Button rshift = new Button(">>");
+	rshift.setPadding(new Insets(10,11,10,11));
         rshift.setOnAction(e -> argument.setText(argument.getText() + " >>"));
         // Row 3                                                                                                                                                                     
         Button n1 = new Button("1");
+	n1.setPadding(new Insets(10,20,10,20));
         n1.setOnAction(e -> argument.setText(argument.getText() + " 1"));
         Button n2 = new Button("2");
+	n2.setPadding(new Insets(10,20,10,20));
         n2.setOnAction(e -> argument.setText(argument.getText() + " 2"));
         Button n3 = new Button("3");
+	n3.setPadding(new Insets(10,20,10,20));
         n3.setOnAction(e -> argument.setText(argument.getText() + " 3"));
         Button subtract = new Button("-");
+	subtract.setPadding(new Insets(10,20,10,20));
         subtract.setOnAction(e -> argument.setText(argument.getText() + " -"));
         toggleMath = new Button("Use Recursion");
+	toggleMath.setPadding(new Insets(10,20,10,20));
         toggleMath.setOnAction(e -> toggleMathAlgorithm());
 
         // Row 4                                                                                                                                                                     
         Button n0 = new Button("0");
+	n0.setPadding(new Insets(10,20,10,20));
         n0.setOnAction(e -> argument.setText(argument.getText() + " 0"));
         Button equals = new Button("=");
-        equals.setOnAction(e -> answer.setText(evaluate(argument.getText())));
+        equals.setPadding(new Insets(10,43,10,43));
+	equals.setOnAction(e -> answer.setText(evaluate(argument.getText())));
         Button add = new Button("+");
+	add.setPadding(new Insets(10,17,10,18));
         add.setOnAction(e -> argument.setText(argument.getText() + " +"));
         hideBin = new Button("Hide Binary");
+	hideBin.setPadding(new Insets(10,29,10,28));
 	hideBin.setOnAction(e -> changeVisibility());
 
 
