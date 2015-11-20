@@ -58,7 +58,7 @@ public class Driver extends Application{
         Scene scene = new Scene(border, 500,500);
         border.setTop(createScreen());
         border.setCenter(createInputBox());
-	primaryStage.setWidth(400);
+	primaryStage.setWidth(300);
 	primaryStage.setHeight(200);
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -100,9 +100,7 @@ public class Driver extends Application{
      **/
 
     public FlowPane createBits(){
-        flow = new FlowPane(1,1);
-	flow.setPrefWrapLength(200);
-	flow.setHgap(0);
+        flow = new FlowPane();
         for(int i=0; i<64; i++){
 	    int val=63-i;
             buttons1[i] = new Button("0");
@@ -116,9 +114,9 @@ public class Driver extends Application{
 	space.setStyle("-fx-background-color: transparent;");
 	for(int f=0; f<32; f++){
             flow.getChildren().add(buttons1[f]);
-	    //if(f % 4 == 0){
-	    //	flow.getChildren(space);
-	    //}
+	    // if(f % 4 == 0){
+	    // flow.getChildren().add(space);
+	    // }
 	}
         for(int s=32; s<64; s++){
             flow.getChildren().add(buttons1[s]);
