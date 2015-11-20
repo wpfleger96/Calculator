@@ -58,8 +58,8 @@ public class Driver extends Application{
         Scene scene = new Scene(border, 500,500);
         border.setTop(createScreen());
         border.setCenter(createInputBox());
-	primaryStage.setWidth(350);
-	primaryStage.setHeight(250);
+	primaryStage.setWidth(500);
+	primaryStage.setHeight(300);
         primaryStage.setScene(scene);
         primaryStage.show();
 
@@ -73,9 +73,8 @@ public class Driver extends Application{
     
     public VBox createScreen(){
         screen = new VBox();
-        argument = new Label("");
-	//argument.setFont(new Font("Arial",30));
-        answer = new Label("");
+        argument = new Label("0");
+	answer = new Label("0");
 	screen.setSpacing(10);
         screen.getChildren().addAll(argument, answer);
         return screen;
@@ -106,21 +105,30 @@ public class Driver extends Application{
 	    int val=63-i;
             buttons1[i] = new Button("0");
 	    buttons1[i].setStyle("-fx-background-color: transparent;");
-	    buttons1[i].setPadding(new Insets(0));
+	    buttons1[i].setPadding(new Insets(1));
 	    int current = i;
             buttons1[i].setOnAction(e -> answer.setText(updateScreen(val, buttons1[current].getText())));
 	}
 
-	Button space = new Button();
-	space.setStyle("-fx-background-color: transparent;");
+	Button space;
+	
 	for(int f=0; f<32; f++){
-            flow.getChildren().add(buttons1[f]);
-	    // if(f % 4 == 0){
-	    // flow.getChildren().add(space);
-	    // }
+            
+	    if(f % 4 == 0 && f != 0){
+		 space = new Button();
+		 space.setStyle("-fx-background-color: transparent;");
+		 flow.getChildren().add(space);
+	    }
+	    flow.getChildren().add(buttons1[f]);
 	}
         for(int s=32; s<64; s++){
-            flow.getChildren().add(buttons1[s]);
+            
+	    if(s % 4 == 0 && s != 0){
+		 space = new Button();
+		 space.setStyle("-fx-background-color: transparent;");
+		 flow.getChildren().add(space);
+	    }
+	    flow.getChildren().add(buttons1[s]);
         }
 	return flow;
     }
