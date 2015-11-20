@@ -58,7 +58,7 @@ public class Driver extends Application{
         Scene scene = new Scene(border, 500,500);
         border.setTop(createScreen());
         border.setCenter(createInputBox());
-	primaryStage.setWidth(400);
+	primaryStage.setWidth(350);
 	primaryStage.setHeight(250);
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -301,7 +301,6 @@ public class Driver extends Application{
         expression=expression.replaceAll(">>", ">");
         expression=expression.replaceAll("<<", "<");
         String infix[] = expression.split(" ");
-        System.out.print("INFIX: ");
         for(int i=0; i<infix.length; i++){
 	    System.out.print(infix[i] + " ");
         }
