@@ -1,0 +1,553 @@
+Do-Pfleger-p3:
+total 1240
+-rw-r--r--. 1 ugrad     383 Nov  3 14:30 build.sbt
+-rw-r--r--. 1 ugrad    1556 Nov 20 17:39 MOCKUP.md
+drwxr-xr-x. 3 ugrad    4096 Nov 19 15:07 project
+-rw-r--r--. 1 ugrad   18535 Nov 20 17:39 README.md
+-rw-r--r--. 1 ugrad       0 Nov 20 17:43 rec69470
+-rwxr-xr-x. 1 ugrad      51 Nov  3 14:30 sbt
+-rw-r--r--. 1 ugrad     118 Nov  3 14:30 sbt.bat
+-rw-r--r--. 1 ugrad 1216768 Nov  3 14:30 sbt-launch.jar
+drwxr-xr-x. 4 ugrad    4096 Nov  3 14:30 src
+drwxr-xr-x. 5 ugrad    4096 Nov 19 15:08 target
+
+Do-Pfleger-p3/project:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:07 target
+
+Do-Pfleger-p3/project/target:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 config-classes
+
+Do-Pfleger-p3/project/target/config-classes:
+total 120
+-rw-r--r--. 1 ugrad 1389 Nov 19 15:08 $61798c6a2a9bc12bbd2b$$anonfun$$sbtdef$1.class
+-rw-r--r--. 1 ugrad   22 Nov 19 15:08 $61798c6a2a9bc12bbd2b.cache
+-rw-r--r--. 1 ugrad  403 Nov 19 15:08 $61798c6a2a9bc12bbd2b.class
+-rw-r--r--. 1 ugrad 1520 Nov 19 15:08 $61798c6a2a9bc12bbd2b$.class
+-rw-r--r--. 1 ugrad  904 Nov 19 15:08 $8b7054e7f735dfeaddb1$$anonfun$$sbtdef$1.class
+-rw-r--r--. 1 ugrad   22 Nov 19 15:08 $8b7054e7f735dfeaddb1.cache
+-rw-r--r--. 1 ugrad  725 Nov 19 15:08 $8b7054e7f735dfeaddb1.class
+-rw-r--r--. 1 ugrad 1313 Nov 19 15:08 $8b7054e7f735dfeaddb1$.class
+-rw-r--r--. 1 ugrad  890 Nov 19 15:08 $8f24461de0b556e4b065$$anonfun$$sbtdef$1.class
+-rw-r--r--. 1 ugrad   22 Nov 19 15:08 $8f24461de0b556e4b065.cache
+-rw-r--r--. 1 ugrad  403 Nov 19 15:08 $8f24461de0b556e4b065.class
+-rw-r--r--. 1 ugrad 1316 Nov 19 15:08 $8f24461de0b556e4b065$.class
+-rw-r--r--. 1 ugrad   22 Nov 19 15:08 $95440f1afafdaf90a12b.cache
+-rw-r--r--. 1 ugrad  326 Nov 19 15:08 $95440f1afafdaf90a12b.class
+-rw-r--r--. 1 ugrad 2208 Nov 19 15:08 $95440f1afafdaf90a12b$.class
+-rw-r--r--. 1 ugrad  945 Nov 19 15:08 $d93b27264aae3065c8a3$$anonfun$$sbtdef$1.class
+-rw-r--r--. 1 ugrad   22 Nov 19 15:08 $d93b27264aae3065c8a3.cache
+-rw-r--r--. 1 ugrad  403 Nov 19 15:08 $d93b27264aae3065c8a3.class
+-rw-r--r--. 1 ugrad 1489 Nov 19 15:08 $d93b27264aae3065c8a3$.class
+-rw-r--r--. 1 ugrad  945 Nov 19 15:08 $dd7bd54f526c67fc0507$$anonfun$$sbtdef$1.class
+-rw-r--r--. 1 ugrad   22 Nov 19 15:08 $dd7bd54f526c67fc0507.cache
+-rw-r--r--. 1 ugrad  403 Nov 19 15:08 $dd7bd54f526c67fc0507.class
+-rw-r--r--. 1 ugrad 1325 Nov 19 15:08 $dd7bd54f526c67fc0507$.class
+-rw-r--r--. 1 ugrad 1377 Nov 19 15:08 $ef221ea21828f6f3aaac$$anonfun$$sbtdef$1.class
+-rw-r--r--. 1 ugrad   22 Nov 19 15:08 $ef221ea21828f6f3aaac.cache
+-rw-r--r--. 1 ugrad  403 Nov 19 15:08 $ef221ea21828f6f3aaac.class
+-rw-r--r--. 1 ugrad 1546 Nov 19 15:08 $ef221ea21828f6f3aaac$.class
+-rw-r--r--. 1 ugrad   22 Nov 19 15:08 $fa95bd1a61980a7861b9.cache
+-rw-r--r--. 1 ugrad  326 Nov 19 15:08 $fa95bd1a61980a7861b9.class
+-rw-r--r--. 1 ugrad 2205 Nov 19 15:08 $fa95bd1a61980a7861b9$.class
+
+Do-Pfleger-p3/src:
+total 8
+drwxr-xr-x. 4 ugrad 4096 Nov  3 14:30 main
+drwxr-xr-x. 3 ugrad 4096 Nov  3 14:30 test
+
+Do-Pfleger-p3/src/main:
+total 8
+drwxr-xr-x. 3 ugrad 4096 Nov  3 14:30 java
+drwxr-xr-x. 2 ugrad 4096 Nov  3 14:30 resources
+
+Do-Pfleger-p3/src/main/java:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov  3 14:30 cs1302
+
+Do-Pfleger-p3/src/main/java/cs1302:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 20 17:41 calc
+
+Do-Pfleger-p3/src/main/java/cs1302/calc:
+total 44
+-rw-r--r--. 1 ugrad  1294 Nov  3 14:30 BasicMath.java
+-rw-r--r--. 1 ugrad 12151 Nov 20 17:41 Driver.java
+-rw-r--r--. 1 ugrad  3111 Nov 13 17:27 IterativeMath.java
+-rw-r--r--. 1 ugrad   459 Nov  3 14:30 MalformedPostfixException.java
+-rw-r--r--. 1 ugrad  4124 Nov  3 14:30 Math.java
+-rw-r--r--. 1 ugrad  2752 Nov 13 17:24 RecursiveMath.java
+-rw-r--r--. 1 ugrad  7561 Nov  3 14:30 ReversePolishNotation.java
+
+Do-Pfleger-p3/src/main/resources:
+total 8
+-rw-r--r--. 1 ugrad 136 Nov  3 14:30 calc.css
+-rw-r--r--. 1 ugrad 536 Nov  3 14:30 calc.fxml
+
+Do-Pfleger-p3/src/test:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov  3 14:30 java
+
+Do-Pfleger-p3/src/test/java:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov  3 14:30 cs1302
+
+Do-Pfleger-p3/src/test/java/cs1302:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov  3 14:30 calc
+
+Do-Pfleger-p3/src/test/java/cs1302/calc:
+total 24
+-rw-r--r--. 1 ugrad  373 Nov  3 14:30 DriverTest.java
+-rw-r--r--. 1 ugrad  198 Nov  3 14:30 IterativeMathTest.java
+-rw-r--r--. 1 ugrad 4963 Nov  3 14:30 MathTest.java
+-rw-r--r--. 1 ugrad  198 Nov  3 14:30 RecursiveMathTest.java
+-rw-r--r--. 1 ugrad 2394 Nov  3 14:30 ReversePolishNotationTest.java
+
+Do-Pfleger-p3/target:
+total 12
+drwxr-xr-x. 4 ugrad 4096 Nov 19 15:08 resolution-cache
+drwxr-xr-x. 3 ugrad 4096 Nov 20 17:42 scala-2.10
+drwxr-xr-x. 5 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/resolution-cache:
+total 8
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 cs1302-calculator
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 reports
+
+Do-Pfleger-p3/target/resolution-cache/cs1302-calculator:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 cs1302-calculator_2.10
+
+Do-Pfleger-p3/target/resolution-cache/cs1302-calculator/cs1302-calculator_2.10:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 1.0
+
+Do-Pfleger-p3/target/resolution-cache/cs1302-calculator/cs1302-calculator_2.10/1.0:
+total 8
+-rw-r--r--. 1 ugrad  642 Nov 19 15:08 resolved.xml.properties
+-rw-r--r--. 1 ugrad 2051 Nov 19 15:08 resolved.xml.xml
+
+Do-Pfleger-p3/target/resolution-cache/reports:
+total 96
+-rw-r--r--. 1 ugrad   459 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-compile-internal.xml
+-rw-r--r--. 1 ugrad   450 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-compile.xml
+-rw-r--r--. 1 ugrad   447 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-docs.xml
+-rw-r--r--. 1 ugrad   451 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-optional.xml
+-rw-r--r--. 1 ugrad   449 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-plugin.xml
+-rw-r--r--. 1 ugrad   446 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-pom.xml
+-rw-r--r--. 1 ugrad   451 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-provided.xml
+-rw-r--r--. 1 ugrad   459 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-runtime-internal.xml
+-rw-r--r--. 1 ugrad   450 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-runtime.xml
+-rw-r--r--. 1 ugrad  7608 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-scala-tool.xml
+-rw-r--r--. 1 ugrad   450 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-sources.xml
+-rw-r--r--. 1 ugrad  4392 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-test-internal.xml
+-rw-r--r--. 1 ugrad  4348 Nov 19 15:08 cs1302-calculator-cs1302-calculator_2.10-test.xml
+-rw-r--r--. 1 ugrad  4371 Nov 19 15:08 ivy-report.css
+-rw-r--r--. 1 ugrad 20993 Nov 19 15:08 ivy-report.xsl
+
+Do-Pfleger-p3/target/scala-2.10:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 classes
+
+Do-Pfleger-p3/target/scala-2.10/classes:
+total 12
+-rw-r--r--. 1 ugrad  136 Nov  3 14:30 calc.css
+-rw-r--r--. 1 ugrad  536 Nov  3 14:30 calc.fxml
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 cs1302
+
+Do-Pfleger-p3/target/scala-2.10/classes/cs1302:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 20 17:42 calc
+
+Do-Pfleger-p3/target/scala-2.10/classes/cs1302/calc:
+total 40
+-rw-r--r--. 1 ugrad   817 Nov 19 15:08 BasicMath.class
+-rw-r--r--. 1 ugrad  1184 Nov 20 17:42 Driver$1.class
+-rw-r--r--. 1 ugrad 10990 Nov 20 17:42 Driver.class
+-rw-r--r--. 1 ugrad  1183 Nov 19 15:08 IterativeMath.class
+-rw-r--r--. 1 ugrad   539 Nov 19 15:08 MalformedPostfixException.class
+-rw-r--r--. 1 ugrad   676 Nov 19 15:08 Math.class
+-rw-r--r--. 1 ugrad  1063 Nov 19 15:08 RecursiveMath.class
+-rw-r--r--. 1 ugrad  3138 Nov 19 15:08 ReversePolishNotation.class
+
+Do-Pfleger-p3/target/streams:
+total 12
+drwxr-xr-x. 14 ugrad 4096 Nov 19 15:08 compile
+drwxr-xr-x.  9 ugrad 4096 Nov 19 15:08 $global
+drwxr-xr-x. 10 ugrad 4096 Nov 19 15:08 runtime
+
+Do-Pfleger-p3/target/streams/compile:
+total 48
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 compile
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 copyResources
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 dependencyClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 exportedProducts
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 externalDependencyClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 incCompileSetup
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 internalDependencyClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 managedClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 run
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 unmanagedClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 unmanagedJars
+
+Do-Pfleger-p3/target/streams/compile/compile:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/compile/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/compile/$global/streams:
+total 8
+-rw-r--r--. 1 ugrad  302 Nov 20 17:42 export
+-rw-r--r--. 1 ugrad 1980 Nov 20 17:42 out
+
+Do-Pfleger-p3/target/streams/compile/copyResources:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/copyResources/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/copyResources/$global/streams:
+total 8
+-rw-r--r--. 1 ugrad 168 Nov 20 17:42 copy-resources
+-rw-r--r--. 1 ugrad 411 Nov 20 17:42 out
+
+Do-Pfleger-p3/target/streams/compile/dependencyClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/dependencyClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/dependencyClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/compile/exportedProducts:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/exportedProducts/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/exportedProducts/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 68 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/compile/externalDependencyClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/externalDependencyClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/externalDependencyClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/compile/$global:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/$global/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 discoveredMainClasses
+
+Do-Pfleger-p3/target/streams/compile/$global/$global/discoveredMainClasses:
+total 4
+-rw-r--r--. 1 ugrad 24 Nov 20 17:42 data
+
+Do-Pfleger-p3/target/streams/compile/incCompileSetup:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/incCompileSetup/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/incCompileSetup/$global/streams:
+total 64
+-rw-r--r--. 1 ugrad 62896 Nov 20 17:42 inc_compile_2.10
+
+Do-Pfleger-p3/target/streams/compile/internalDependencyClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/internalDependencyClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/internalDependencyClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/compile/managedClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/managedClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/managedClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/compile/run:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/run/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/run/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 55 Nov 20 17:42 out
+
+Do-Pfleger-p3/target/streams/compile/unmanagedClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/unmanagedClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/unmanagedClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/compile/unmanagedJars:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/compile/unmanagedJars/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/compile/unmanagedJars/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/$global:
+total 28
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 clean
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 dependencyPositions
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 ivyConfiguration
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 ivySbt
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 projectDescriptors
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 update
+
+Do-Pfleger-p3/target/streams/$global/clean:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/$global/clean/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/$global/clean/$global/streams:
+total 0
+-rw-r--r--. 1 ugrad 0 Nov 19 15:08 out
+
+Do-Pfleger-p3/target/streams/$global/dependencyPositions:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/$global/dependencyPositions/$global:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/$global/dependencyPositions/$global/streams:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 update_cache_2.10
+
+Do-Pfleger-p3/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10:
+total 8
+-rw-r--r--. 1 ugrad  74 Nov 19 15:08 input_dsp
+-rw-r--r--. 1 ugrad 144 Nov 20 17:42 output_dsp
+
+Do-Pfleger-p3/target/streams/$global/$global:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/$global/$global/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/$global/$global/$global/streams:
+total 0
+-rw-r--r--. 1 ugrad 0 Nov 19 15:08 out
+
+Do-Pfleger-p3/target/streams/$global/ivyConfiguration:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/$global/ivyConfiguration/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/$global/ivyConfiguration/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 172 Nov 19 15:08 out
+
+Do-Pfleger-p3/target/streams/$global/ivySbt:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/$global/ivySbt/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/$global/ivySbt/$global/streams:
+total 0
+-rw-r--r--. 1 ugrad 0 Nov 19 15:08 out
+
+Do-Pfleger-p3/target/streams/$global/projectDescriptors:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/$global/projectDescriptors/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/$global/projectDescriptors/$global/streams:
+total 0
+-rw-r--r--. 1 ugrad 0 Nov 19 15:08 out
+
+Do-Pfleger-p3/target/streams/$global/update:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/$global/update/$global:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/$global/update/$global/streams:
+total 28
+-rw-r--r--. 1 ugrad 21409 Nov 19 15:08 out
+drwxr-xr-x. 2 ugrad  4096 Nov 19 15:08 update_cache_2.10
+
+Do-Pfleger-p3/target/streams/$global/update/$global/streams/update_cache_2.10:
+total 20
+-rw-r--r--. 1 ugrad  1585 Nov 19 15:08 inputs
+-rw-r--r--. 1 ugrad 13676 Nov 20 17:42 output
+
+Do-Pfleger-p3/target/streams/runtime:
+total 32
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 dependencyClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 exportedProducts
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 externalDependencyClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 fullClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 internalDependencyClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 managedClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 unmanagedClasspath
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 unmanagedJars
+
+Do-Pfleger-p3/target/streams/runtime/dependencyClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/runtime/dependencyClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/runtime/dependencyClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 68 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/runtime/exportedProducts:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/runtime/exportedProducts/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/runtime/exportedProducts/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 68 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/runtime/externalDependencyClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/runtime/externalDependencyClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/runtime/externalDependencyClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/runtime/fullClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/runtime/fullClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/runtime/fullClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 68 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/runtime/internalDependencyClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/runtime/internalDependencyClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/runtime/internalDependencyClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 68 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/runtime/managedClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/runtime/managedClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/runtime/managedClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/runtime/unmanagedClasspath:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/runtime/unmanagedClasspath/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/runtime/unmanagedClasspath/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+
+Do-Pfleger-p3/target/streams/runtime/unmanagedJars:
+total 4
+drwxr-xr-x. 3 ugrad 4096 Nov 19 15:08 $global
+
+Do-Pfleger-p3/target/streams/runtime/unmanagedJars/$global:
+total 4
+drwxr-xr-x. 2 ugrad 4096 Nov 19 15:08 streams
+
+Do-Pfleger-p3/target/streams/runtime/unmanagedJars/$global/streams:
+total 4
+-rw-r--r--. 1 ugrad 1 Nov 20 17:42 export
+/home/ugrads/pfleger/~./ssh/Do-Pfleger-p3:/home/work/cs1302a
